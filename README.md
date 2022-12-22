@@ -50,7 +50,7 @@ The package has rich code samples and detailed usage docs.
 #### Performance & Cache:
 
 * All Tweens will be cached and reused, no need to manually manage the memory data.
-* All Tween actions and action values have independent cache-reuse.
+* All Tween actions have independent cache-reuse.
 * All values of all actions are cached by `NativeList` and used by `Jobs`.
 * All ease functions and action values settings are optimized with `BurstCompile` and `Unsafe Code` and `Mathematics` APIs.
 
