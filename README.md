@@ -66,6 +66,11 @@ The package has rich code samples and detailed usage docs.
 * All engine extensions use `C# (static this) Extension Methods`, which makes it convenient and fast to use.
 
 
+## Code Architecture
+
+![MojoUnity-Tween Code Architecture](./Documentation/CodeArchitecture.png "MojoUnity-Tween Code Architecture")
+
+
 ## Issues & Discussions
 
 * Any bugs can go to [[Issues]](https://github.com/scottcgi/MojoUnity-Tween/issues) for feedback.
