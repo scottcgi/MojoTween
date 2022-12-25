@@ -13,7 +13,7 @@ The package has rich code samples and detailed usage docs.
 #### Ease Functions:
 
 * Support fully standard `easeInOut` effects.
-* Support extra effects such as `Smooth`, `ShakeXYZ`, `BezierQuadraticXYZ`, `BezierCubicXYZ`, and so on.
+* Support extra effects such as `Smooth`, `ShakeXYZ`, `BezierQuadraticXYZ`, `BezierCubicXYZ` and more.
 * Optimize all functions based on `Burst` and `Mathematics` APIs.
 * Use expression expansion whenever possible to optimize functions.
 
