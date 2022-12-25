@@ -42,6 +42,7 @@ The package has rich code samples and detailed usage docs.
 * Support independent callback with `SetOnStart`, `SetOnComplete`.
 * Support ease and relative for each action value with `SetRelativeAt`, `SetEaseAt`.
 * Support custom params with `SetExtraParams`.
+* Support chained calls to set properties.
 
 #### Tween Manager Control Methods:
 
