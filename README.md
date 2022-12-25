@@ -34,6 +34,7 @@ The package has rich code samples and detailed usage docs.
 * Support rich Tween state test with `IsPlaying`, `IsRewinding`, `IsPaused`, `IsStopped`, `IsCompleted`, `IsRecycled` and more.
 * Support various Tween callback bindings with `SetOnStart`, `SetOnComplete`, `SetOnStop`, `SetOnRecycle` and more.
 * Support Tween default ease and relative settings.
+* Support chained calls to set properties.
 
 #### Tween Action Control Methods:
 
