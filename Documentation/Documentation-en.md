@@ -8,7 +8,7 @@ Such as `Transform` can directly call the method with the `Action` prefix to cre
 
 Both `Tween` and `TweenAction` support chained calls to set properties, including `ease`, `isRelative`, `callback` and more.
 
-The detailed object relationships can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
+The detailed relationships of engine objects  can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
 
 
 * [TweenManager](#tweenmanager)
@@ -16,4 +16,17 @@ The detailed object relationships can be found in the [Code Architecture](./Code
 
 
 ## TweenManager
+
+<details><summary>`bool IsAnyUpdating()`</summary>
+```
+Is there any Tween updating?
+```
+</details>
+
+<details><summary>void StopAll()</summary>
+```
+Stop all updating Tweens Playing or Rewinding.
+If the Tween is recyclable then it will be recycled.
+```
+</details>
 
