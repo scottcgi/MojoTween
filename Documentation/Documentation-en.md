@@ -17,13 +17,15 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 ## TweenManager
 
-<details><summary>`bool IsAnyUpdating()`</summary>
+<details><summary>bool IsAnyUpdating()</summary>
+  
 ```
 Is there any Tween updating?
 ```
 </details>
 
 <details><summary>void StopAll()</summary>
+
 ```
 Stop all updating Tweens Playing or Rewinding.
 If the Tween is recyclable then it will be recycled.
