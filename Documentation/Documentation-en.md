@@ -27,6 +27,15 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >If [isRecyclable] is [true] then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.
   >
   >If [isRecyclable] is [false] then the Tween needs to be recycled manually by [SetRecyclable] — so the Tween can be [Restart] or [Rewind].
+  
+  ```C#
+  // auto recycle
+  var tween = Tween.Create();
+  // manual recycle
+  var tween = Tween.Create(false);
+  // recycle tween
+  tween.SetRecyclable(true);
+  ```
 </details>
 
 
