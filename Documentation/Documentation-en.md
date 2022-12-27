@@ -10,9 +10,24 @@ Both `Tween` and `TweenAction` support chained calls to set properties, includin
 
 The detailed relationships of engine objects  can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
 
-
+* [Tween](#tween)
 * [TweenManager](#tweenmanager)
 * 
+
+
+## Tween
+
+<details>
+  <summary>
+    <code>Tween Create(bool isRecyclable = true)</code>
+  </summary>
+  
+  >Creates a Tween.
+  >
+  >If [isRecyclable] is [true] then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.
+  >
+  >If [isRecyclable] is [false] then the Tween needs to be recycled manually by [SetRecyclable] — so the Tween can be [Restart] or [Rewind].
+</details>
 
 
 ## TweenManager
@@ -30,7 +45,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>void StopAll()</code>
   </summary>
 
-  >Stops all updating Tweens Playing or Rewinding. If the Tween is recyclable then it will be recycled.
+  >Stops all updating Tweens Playing or Rewinding.
+  >
+  >If the Tween is recyclable then it will be recycled on completion.
 </details>
 
 <details>
@@ -103,6 +120,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>DisposeAllNativeData()</code>
   </summary>
 
-  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit]. If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, will cause an editor error when app quit.
+  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit]. 
+  >
+  >If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, will cause an editor error when app quit.
 </details>
 
