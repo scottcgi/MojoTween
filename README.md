@@ -12,42 +12,42 @@ The package has rich code samples and detailed usage docs.
 
 #### Ease Functions:
 
-* Support fully standard `easeInOut` effects.
-* Support extra effects such as `Smooth`, `ShakeXYZ`, `BezierQuadraticXYZ`, `BezierCubicXYZ` and more.
-* Optimize all functions based on `Burst` and `Mathematics` APIs.
-* Use expression expansion whenever possible to optimize functions.
+* Supports fully standard `easeInOut` effects.
+* Supports extra effects such as `Smooth`, `ShakeXYZ`, `BezierQuadraticXYZ`, `BezierCubicXYZ` and more.
+* Optimizes all functions based on `Burst` and `Mathematics` APIs.
+* Uses expression expansion whenever possible to optimize functions.
 
 #### Animate Everything:
 
-* `Transform` can perform Tweens with `Move`, `Scale`, `Rotate`, `Shake Position / Scale / Rotation`, `Bezier Quadratic / Cubic Move`.
-* `RectTransform` can perform Tweens with `Anchored`, `OffsetMax`, `OffsetMin`, `sizeDelta`.
-* `Graphic` can perform Tweens with `Fade`, `Color`, `RGB`.
-* `CanvasGroup` can perform Tweens with `Fade`.
-* `SpriteRenderer` can perform Tweens with `Fade`.
-* `AudioSource` can perform Tweens with `Volume`.
-* `Material` can perform Tweens with `Float`, `Int`, `Vector`, `Color`.
+* `Transform` can perform Tween with `Move`, `Scale`, `Rotate`, `Shake Position / Scale / Rotation`, `Bezier Quadratic / Cubic Move`.
+* `RectTransform` can perform Tween with `Anchored`, `OffsetMax`, `OffsetMin`, `sizeDelta`.
+* `Graphic` can perform Tween with `Fade`, `Color`, `RGB`.
+* `CanvasGroup` can perform Tween with `Fade`.
+* `SpriteRenderer` can perform Tween with `Fade`.
+* `AudioSource` can perform Tween with `Volume`.
+* `Material` can perform Tween with `Float`, `Int`, `Vector`, `Color`.
 
 #### Tween Control Methods:
 
-* Support queued and concurrent actions in one Tween with `Append`, `AppendInterval`, `AppendCallback`, `AppendIntervalCallback`, `Add`, `AddWithDelay`, `AddDelayCallback`, `AddAfterAppend` and more.
-* Support Tween `Play`, `Rewind`, `Restart`, `GotoStart`, `Reverse`, `Stop`, `Pause` and more.
-* Support rich Tween state test with `IsPlaying`, `IsRewinding`, `IsPaused`, `IsStopped`, `IsCompleted`, `IsRecycled` and more.
-* Support various Tween callback bindings with `SetOnStart`, `SetOnComplete`, `SetOnStop`, `SetOnRecycle` and more.
-* Support Tween default ease and relative settings.
-* Support chained calls to set properties.
+* Supports queued and concurrent actions in one Tween with `Append`, `AppendInterval`, `AppendCallback`, `AppendIntervalCallback`, `Add`, `AddWithDelay`, `AddDelayCallback`, `AddAfterAppend` and more.
+* Supports Tween `Play`, `Rewind`, `Restart`, `GotoStart`, `Reverse`, `Stop`, `Pause` and more.
+* Supports rich Tween state test with `IsPlaying`, `IsRewinding`, `IsPaused`, `IsStopped`, `IsCompleted`, `IsRecycled` and more.
+* Supports various Tween callback bindings with `SetOnStart`, `SetOnComplete`, `SetOnStop`, `SetOnRecycle` and more.
+* Supports Tween default ease and relative settings.
+* Supports chained calls to set properties.
 
 #### Tween Action Control Methods:
 
-* Support ease action with `Float`, `Vector2`, `Vector3`, `Vector4`.
-* Support independent callback with `SetOnStart`, `SetOnComplete`.
-* Support ease and relative for each action value with `SetRelativeAt`, `SetEaseAt`.
-* Support custom params with `SetExtraParams`.
-* Support chained calls to set properties.
+* Supports ease action with `Float`, `Vector2`, `Vector3`, `Vector4`.
+* Supports independent callback with `SetOnStart`, `SetOnComplete`.
+* Supports ease and relative for each action value with `SetRelativeAt`, `SetEaseAt`.
+* Supports custom params with `SetExtraParams`.
+* Supports chained calls to set properties.
 
 #### Tween Manager Control Methods:
 
-* Support updating Tweens `StopAll`, `RestartAll`, `ReverseAll`, `RewindAll`, `PauseAll`, `TogglePauseAll`, `RecycleAll` and more.
-* Support native data release.
+* Supports updating Tweens `StopAll`, `RestartAll`, `ReverseAll`, `RewindAll`, `PauseAll`, `TogglePauseAll`, `RecycleAll` and more.
+* Supports native data release.
 
 #### Performance & Cache:
 
@@ -58,7 +58,7 @@ The package has rich code samples and detailed usage docs.
 
 #### Tween Runtime Info:
 
-* Integrate an Editor extension to easily and quickly extend the `Inspector` and `Window`.
+* Integrates an Editor extension to easily and quickly extend the `Inspector` and `Window`.
 * All Tweens runtime info can be visited through the `Editor UI`.
 
 #### Customize & Extend:
