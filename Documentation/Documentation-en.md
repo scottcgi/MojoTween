@@ -17,25 +17,92 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 ## TweenManager
 
-<details><summary><code>bool IsAnyUpdating()</code></summary>
+<details>
+  <summary>
+    <code>bool IsAnyUpdating()</code>
+  </summary>
   
-```
-Is there any Tween updating?
-```
+  >Is there any Tween updating?
 </details>
 
-<details><summary><code>void StopAll()</code></summary>
+<details>
+  <summary>
+    <code>void StopAll()</code>
+  </summary>
 
-```
-Stop all updating Tweens Playing or Rewinding.
-If the Tween is recyclable then it will be recycled.
-```
+  >Stops all updating Tweens Playing or Rewinding. If the Tween is recyclable then it will be recycled.
 </details>
 
-<details><summary><code>void RestartAll()</code></summary>
+<details>
+  <summary>
+    <code>void RestartAll()</code>
+  </summary>
 
-```
-Restart all updating Tweens Playing or Rewinding.
-```
+  >Restarts all updating Tweens Playing or Rewinding.
+</details>
+
+<details>
+  <summary>
+    <code>void ReverseAll()</code>
+  </summary>
+
+  >Reverses all updating Tweens Playing or Rewinding.
+</details>
+
+<details>
+  <summary>
+    <code>void RewindAll()</code>
+  </summary>
+
+  >Rewinds all updating Tweens Playing or Rewinding.
+</details>
+
+<details>
+  <summary>
+    <code>void PauseAll()</code>
+  </summary>
+
+  >Pauses or resumes all updating Tweens Playing or Rewinding.
+</details>
+
+<details>
+  <summary>
+    <code>void TogglePauseAll()</code>
+  </summary>
+
+  >Toggles all updating Tweens state between Playing or Rewinding and Paused.
+</details>
+
+
+<details>
+  <summary>
+    <code>void SetRecyclableAll(bool isRecyclable)</code>
+  </summary>
+
+  >Sets all updating Tweens to recyclable.
+</details>
+
+<details>
+  <summary>
+    <code>void RecycleAll()</code>
+  </summary>
+
+  >Stops all updating Tweens and Recycles all unrecycled Tweens.
+</details>
+
+<details>
+  <summary>
+    <code>void Update()</code>
+  </summary>
+
+  >Updates all Tweens, called every frame.
+</details>
+
+<details>
+  <summary>
+    <code>DisposeAllNativeData()</code>
+  </summary>
+
+  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit]. If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, will cause an editor error when app quit.
 </details>
 
