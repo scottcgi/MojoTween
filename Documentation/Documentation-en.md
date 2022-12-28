@@ -11,13 +11,22 @@ Both `Tween` and `TweenAction` support chained calls to set properties, includin
 The detailed relationships of engine objects  can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
 
 * [Tween](#tween)
+  * [Static](#static) 
+  * [Append](#append)
+  * [Add](#add)
+  * [Add Delay](#add-delay)
+  * [Add After](#add-after)
+  * [Add Callback](#add-callback)
+  * [Add Delay Callback](#add-delay-callback)
 * [TweenManager](#tweenmanager)
 * 
 
 
 ## Tween
 
-<details>
+#### Static 
+  
+* <details>
   <summary>
     <code>static Tween Create(bool isRecyclable = true)</code>
   </summary>
@@ -38,7 +47,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween PlayDelayCallback(float delay, Action Callback)</code>
   </summary>
@@ -50,7 +59,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
-<details>
+#### Append 
+
+* <details>
   <summary>
     <code>Tween Append(TweenAction action)</code>
   </summary>
@@ -65,7 +76,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```  
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween AppendInterval(float interval)</code>
   </summary>
@@ -82,7 +93,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```    
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween AppendCallback(Action Callback)</code>
   </summary>
@@ -99,7 +110,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```     
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween AppendIntervalCallback(float interval, Action Callback)</code>
   </summary>
@@ -113,7 +124,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```    
 </details>
 
-<details>
+#### Add
+
+* <details>
   <summary>
     <code>Tween Add(TweenAction action)</code>
   </summary>
@@ -128,23 +141,104 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```   
 </details>
 
-<details>
+#### Add Delay
+
+* <details>
   <summary>
-    <code>Tween AddWithDelay(float delay, TweenAction action)</code>
+    <code>Tween AddDelay(float delay, TweenAction action)</code>
   </summary>
   
-  >Adds the TweenAction with delay time to the concurrent array.
+  >Adds the delay TweenAction to the concurrent array.
   
   ```C#
   Tween.Create()
-       .AddWithDelay(0.0f, transform0.ActionMoveY(10.0f, 3.0f))
-       .AddWithDelay(0.2f, transform1.ActionMoveY(20.0f, 3.0f))  
-       .AddWithDelay(0.4f, transform2.ActionMoveY(30.0f, 3.0f))
+       .AddDelay(0.0f, transform0.ActionMoveY(10.0f, 3.0f))
+       .AddDelay(0.2f, transform1.ActionMoveY(20.0f, 3.0f))  
+       .AddDelay(0.4f, transform2.ActionMoveY(30.0f, 3.0f))
        .Play();
   ```     
 </details>
 
-<details>
+* <details>
+  <summary>
+    <code>Tween AddDelayAfterAppend(float delay, TweenAction action)</code>
+  </summary>
+  
+  >Adds the delay TweenAction after the last Appended to the concurrent array.  
+</details>
+
+* <details>
+  <summary>
+    <code>Tween AddDelayAfterAdd(float delay, TweenAction action)</code>
+  </summary>
+  
+  >Adds the delay TweenAction after the last Added to the concurrent array.
+</details>
+
+
+#### Add After
+
+* <details>
+  <summary>
+    <code>Tween AddAfterAppend(TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction after the last Appended to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .Append        (transform.ActionShakeRotationY(30.0f, 5.0f,  1.5f))
+       .AddAfterAppend(transform.ActionMoveZ         (0.0f,  1.0f       ))
+       .Append        (transform.ActionShakeRotationZ(60.0f, 12.0f, 1.5f))
+       .Play();
+  ```    
+</details>
+
+* <details>
+  <summary>
+    <code>Tween AddAfterAdd(TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction after the last Added to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .Add        (transform.ActionRotateY(360.0f, 1.8f))
+       .AddAfterAdd(transform.ActionRotateY(360.0f, 1.6f))
+       .AddAfterAdd(transform.ActionRotateY(50.0f,  0.2f))
+       .Play(); 
+  ```
+</details>
+
+#### Add Callback
+
+* <details>
+  <summary>
+    <code>Tween AddCallback(Action Callback)</code>
+  </summary>
+  
+  >Adds the callback to the concurrent array.
+</details>
+
+* <details>
+  <summary>
+    <code>Tween AddCallbackAfterAppend(Action Callback)</code>
+  </summary>
+  
+  >Adds the callback after the last Appended to the concurrent array.
+</details>
+
+* <details>
+  <summary>
+    <code>Tween AddCallbackAfterAdd(Action Callback)</code>
+  </summary>
+  
+  >Adds the callback after the last Added to the concurrent array.
+</details>
+
+#### Add Delay Callback
+
+* <details>
   <summary>
     <code>Tween AddDelayCallback(float delay, Action Callback)</code>
   </summary>
@@ -162,36 +256,20 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```   
 </details>
 
-<details>
+* <details>
   <summary>
-    <code>Tween AddAfterAppend(TweenAction action)</code>
+    <code>Tween AddDelayCallbackAfterAppend(float delay, Action Callback)</code>
   </summary>
   
-  >Adds the TweenAction after the last Appended to the concurrent array.
-  
-  ```C#
-  Tween.Create()
-       .Append        (transform.ActionShakeRotationY(30.0f, 5.0f,  1.5f))
-       .AddAfterAppend(transform.ActionMoveZ         (0.0f,  1.0f       ))
-       .Append        (transform.ActionShakeRotationZ(60.0f, 12.0f, 1.5f))
-       .Play();
-  ```    
+  >Adds the delay callback after the last Appended to the concurrent array.
 </details>
 
-<details>
+* <details>
   <summary>
-    <code>Tween AddAfterAppendWithDelay(float delay, TweenAction action)</code>
+    <code>Tween AddDelayCallbackAfterAdd(float delay, Action Callback)</code>
   </summary>
   
-  >Adds the TweenAction after the last Appended with delay time to the concurrent array.
-  
-  ```C#
-  Tween.Create()
-       .Append(transform.ActionShakeRotationY(30.0f, 5.0f,  1.5f))
-       .AddAfterAppendWithDelay(0.5f, transform.ActionMoveZ(0.0f,  1.0f))
-       .Append(transform.ActionShakeRotationZ(60.0f, 12.0f, 1.5f))
-       .Play();
-  ```    
+  >Adds the delay callback after the last Added to the concurrent array.
 </details>
 
 ## TweenManager
@@ -253,7 +331,6 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
   >Toggles all updating Tweens state between Playing or Rewinding and Paused.
 </details>
-
 
 <details>
   <summary>
