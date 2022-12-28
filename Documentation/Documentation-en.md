@@ -19,7 +19,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>Tween Create(bool isRecyclable = true)</code>
+    <code>static Tween Create(bool isRecyclable = true)</code>
   </summary>
   
   >Creates a Tween.
@@ -38,6 +38,111 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
+<details>
+  <summary>
+    <code>static Tween PlayDelayCallback(float delay, Action Callback)</code>
+  </summary>
+  
+  >Plays the callback with delay time.
+  
+  ```C#
+  Tween.PlayDelayCallback(1.0f, () => tween.Reverse());
+  ```
+</details>
+
+<details>
+  <summary>
+    <code>Tween Append(TweenAction action)</code>
+  </summary>
+  
+  >Appends the TweenAction to the queue.
+  
+  ```C#
+  Tween.Create()             
+       .Append(transform.ActionMoveY(1.0f, 0.6f))
+       .Append(transform.ActionMoveY(0.5f, 1.2f))
+       .Play();
+  ```  
+</details>
+
+<details>
+  <summary>
+    <code>Tween AppendInterval(float interval)</code>
+  </summary>
+  
+  >Appends the interval time to the queue.
+  
+  ```C#
+  Tween.Create()
+       .AppendInterval(0.8f)
+       .Append(transform.ActionMoveY(1.0f, 0.6f))
+       .AppendInterval(1.5f)
+       .Append(transform.ActionMoveY(0.5f, 1.2f))
+       .Play();
+  ```    
+</details>
+
+<details>
+  <summary>
+    <code>Tween AppendCallback(Action Callback)</code>
+  </summary>
+  
+  >Appends the callback to the queue.
+  
+  ```C#
+  Tween.Create()
+       .AppendInterval(0.8f)
+       .AppendCallback(() => tween.Stop())
+       .AppendInterval(1.5f)
+       .AppendCallback(() => tween.SetRecyclable(true))
+       .Play();
+  ```     
+</details>
+
+<details>
+  <summary>
+    <code>Tween AppendIntervalCallback(float interval, Action Callback)</code>
+  </summary>
+  
+  >Appends the interval time with callback to the queue.
+  
+  ```C#
+  Tween.Create()
+       .AppendIntervalCallback(0.7f, () => tween.Rewind().SetRecyclable(true))
+       .Play();
+  ```    
+</details>
+
+<details>
+  <summary>
+    <code>Tween Add(TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .Add(transform.ActionRotateY(410f, 2.0f))
+       .Add(transform.ActionScale  (0.5f, 2.0f))
+       .Play();
+  ```   
+</details>
+
+<details>
+  <summary>
+    <code>Tween AddWithDelay(float delay, TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction with delay time to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .AddWithDelay(0.0f, transform0.ActionMoveY(10.0f, 3.0f))
+       .AddWithDelay(0.2f, transform1.ActionMoveY(20.0f, 3.0f))  
+       .AddWithDelay(0.4f, transform2.ActionMoveY(30.0f, 3.0f))
+       .Play();
+  ```     
+</details>
 
 ## TweenManager
 
