@@ -276,7 +276,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>bool IsAnyUpdating()</code>
+    <code>static bool IsAnyUpdating()</code>
   </summary>
   
   >Is there any Tween updating?
@@ -284,7 +284,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void StopAll()</code>
+    <code>static void StopAll()</code>
   </summary>
 
   >Stops all updating Tweens Playing or Rewinding.
@@ -294,7 +294,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void RestartAll()</code>
+    <code>static void RestartAll()</code>
   </summary>
 
   >Restarts all updating Tweens Playing or Rewinding.
@@ -302,7 +302,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void ReverseAll()</code>
+    <code>static void ReverseAll()</code>
   </summary>
 
   >Reverses all updating Tweens Playing or Rewinding.
@@ -310,7 +310,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void RewindAll()</code>
+    <code>static void RewindAll()</code>
   </summary>
 
   >Rewinds all updating Tweens Playing or Rewinding.
@@ -318,7 +318,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void PauseAll()</code>
+    <code>static void PauseAll()</code>
   </summary>
 
   >Pauses or resumes all updating Tweens Playing or Rewinding.
@@ -326,7 +326,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void TogglePauseAll()</code>
+    <code>static void TogglePauseAll()</code>
   </summary>
 
   >Toggles all updating Tweens state between Playing or Rewinding and Paused.
@@ -334,7 +334,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void SetRecyclableAll(bool isRecyclable)</code>
+    <code>static void SetRecyclableAll(bool isRecyclable)</code>
   </summary>
 
   >Sets all updating Tweens to recyclable.
@@ -342,7 +342,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void RecycleAll()</code>
+    <code>static void RecycleAll()</code>
   </summary>
 
   >Stops all updating Tweens and Recycles all unrecycled Tweens.
@@ -350,7 +350,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>void Update()</code>
+    <code>static void Update()</code>
   </summary>
 
   >Updates all Tweens, called every frame.
@@ -358,7 +358,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>DisposeAllNativeData()</code>
+    <code>static void DisposeAllNativeData()</code>
   </summary>
 
   >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit]. 
