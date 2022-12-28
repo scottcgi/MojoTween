@@ -144,6 +144,56 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```     
 </details>
 
+<details>
+  <summary>
+    <code>Tween AddDelayCallback(float delay, Action Callback)</code>
+  </summary>
+  
+  >Adds the delay callback to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .AddDelayCallback(1.0f, () => tween.Reverse())
+       .AddDelayCallback(1.8f, () => tween.Reverse())
+       .AddDelayCallback(2.3f, () => tween.Reverse())
+       .AddDelayCallback(2.9f, () => tween.Reverse())
+       .AddDelayCallback(3.4f, () => tween.Reverse().SetRecyclable(true))
+       .Play();
+  ```   
+</details>
+
+<details>
+  <summary>
+    <code>Tween AddAfterAppend(TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction after the last Appended to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .Append        (transform.ActionShakeRotationY(30.0f, 5.0f,  1.5f))
+       .AddAfterAppend(transform.ActionMoveZ         (0.0f,  1.0f       ))
+       .Append        (transform.ActionShakeRotationZ(60.0f, 12.0f, 1.5f))
+       .Play();
+  ```    
+</details>
+
+<details>
+  <summary>
+    <code>Tween AddAfterAppendWithDelay(float delay, TweenAction action)</code>
+  </summary>
+  
+  >Adds the TweenAction after the last Appended with delay time to the concurrent array.
+  
+  ```C#
+  Tween.Create()
+       .Append(transform.ActionShakeRotationY(30.0f, 5.0f,  1.5f))
+       .AddAfterAppendWithDelay(0.5f, transform.ActionMoveZ(0.0f,  1.0f))
+       .Append(transform.ActionShakeRotationZ(60.0f, 12.0f, 1.5f))
+       .Play();
+  ```    
+</details>
+
 ## TweenManager
 
 <details>
