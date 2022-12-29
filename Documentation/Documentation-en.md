@@ -19,6 +19,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Add Callback](#add-callback)
   * [Add Delay Callback](#add-delay-callback)
   * [On Callback](#on-callback)
+  * [Set Default](#set-default)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -378,6 +379,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 </details>
 
 
+## Set Default
+
+
 ## TweenManager
 
 <details>
@@ -424,7 +428,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>static void PauseAll()</code>
+    <code>static PauseAll(bool isPause)</code>
   </summary>
 
   >Pauses or resumes all updating Tweens Playing or Rewinding.
