@@ -218,7 +218,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   ```C#
   Tween.Create()
-       .Add        (MyConcurrentTweenAction1)
+       .Add(MyConcurrentTweenAction1)
        .AddAfterAdd(MyConcurrentTweenAction2)
        .AddAfterAdd(MyConcurrentTweenAction3)
        .Play(); 
@@ -253,8 +253,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
  
   ```C#
   Tween.Create()
-       .AppendCallback        (MyQueueCallbackAction1)
+       .AppendCallback(MyQueueCallbackAction1)
        .AddCallbackAfterAppend(MyConcurrentCallbackAction1)
+       .AppendCallback(MyQueueCallbackAction2)
        .AddCallbackAfterAppend(MyConcurrentCallbackAction2)
        .Play(); 
   ``` 
@@ -269,7 +270,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
  
   ```C#
   Tween.Create()
-       .AddCallback        (MyConcurrentCallbackAction1)
+       .AddCallback(MyConcurrentCallbackAction1)
        .AddCallbackAfterAdd(MyConcurrentCallbackAction2)
        .AddCallbackAfterAdd(MyConcurrentCallbackAction3)
        .Play(); 
@@ -287,11 +288,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   ```C#
   Tween.Create()
-       .AddDelayCallback(1.0f, () => tween.Reverse())
-       .AddDelayCallback(1.8f, () => tween.Reverse())
-       .AddDelayCallback(2.3f, () => tween.Reverse())
-       .AddDelayCallback(2.9f, () => tween.Reverse())
-       .AddDelayCallback(3.4f, () => tween.Reverse().SetRecyclable(true))
+       .AddDelayCallback(1.0f, MyConcurrentCallbackAction1)
+       .AddDelayCallback(2.8f, MyConcurrentCallbackAction2)
+       .AddDelayCallback(3.0f, MyConcurrentCallbackAction3)
        .Play();
   ```   
 </details>
@@ -305,8 +304,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
  
   ```C#
   Tween.Create()
-       .Append(MyTweenAction)
-       .AddDelayCallbackAfterAppend(0.1f, MyDelayActionAfterAppend)
+       .Append(MyQueueTweenAction1)
+       .AddDelayCallbackAfterAppend(1.0f, MyConcurrentCallbackAction1)
        .Play();
   ``` 
 </details>
@@ -320,8 +319,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   ```C#
   Tween.Create()
-       .Add(MyTweenAction)
-       .AddDelayCallbackAfterAdd(0.1f, MyDelayActionAfterAdd)
+       .Add(MyConcurrentTweenAction1)
+       .AddDelayCallbackAfterAdd(1.0f, MyConcurrentCallbackAction1)
        .Play();
   ```
 </details>
@@ -335,9 +334,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Sets the [OnStart] callback which is called when the Tween starts (Play or Rewind).
  
- ```C#
- Tween.Create().SetOnStart(MyStartAction);
- ```
+  ```C#
+  Tween.Create().SetOnStart(MyStartAction);
+  ```
 </details>
 
 <details>
@@ -359,9 +358,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Sets the [OnStop] callback which is called when the Tween stops (Play or Rewind).
  
- ```C#
- Tween.Create().SetOnStop(MyStopAction);
- ```
+  ```C#
+  Tween.Create().SetOnStop(MyStopAction);
+  ```
 </details>
 
 <details>
@@ -373,9 +372,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >
   >Tip: can use it to clear data bound to Tweens.
  
- ```C#
- Tween.Create().SetOnRecycle(MyRecycleAction);
- ```
+  ```C#
+  Tween.Create().SetOnRecycle(MyRecycleAction);
+  ```
 </details>
 
 
