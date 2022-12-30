@@ -21,6 +21,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [On Callback](#on-callback)
   * [Set Default](#set-default)
   * [Control](#control)
+  * [Test State](#test-state)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -457,7 +458,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 <details>
   <summary>
-    <code>GotoEnd()</code>
+    <code>Tween GotoEnd()</code>
   </summary>
   
   >Goto the end of Tween (Play or Rewind). The Tween cannot be recyclable!
@@ -472,6 +473,34 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >
   >If Tween is [Completed] then reverse the previous Play or Rewind,
    else reverse the Playing or Rewinding.
+</details>
+
+<details>
+  <summary>
+    <code>Tween Stop()</code>
+  </summary>
+  
+  >Stops the Tween Playing or Rewinding.
+  >
+  >If the Tween is recyclable then it will be recycled.
+</details>
+
+<details>
+  <summary>
+    <code>void Pause(bool isPause)</code>
+  </summary>
+  
+  >Pauses or resumes the Tween Playing or Rewinding.
+</details>
+
+#### Test State
+
+<details>
+  <summary>
+    <code>bool IsSetup()</code>
+  </summary>
+  
+  >Whether the Tween state is Setup?
 </details>
 
 
