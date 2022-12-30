@@ -20,6 +20,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Add Delay Callback](#add-delay-callback)
   * [On Callback](#on-callback)
   * [Set Default](#set-default)
+  * [Control](#control)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -379,7 +380,99 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 </details>
 
 
-## Set Default
+#### Set Default
+
+<details>
+  <summary>
+    <code>Tween SetDefaultEase(TweenEase ease)</code>
+  </summary>
+  
+  >Sets the [ease] of [Add] or [Append] TweenAction, default Smooth.
+  >
+  >Only sets the TweenAction whose [ease] is Smooth.
+ 
+  ```C#
+  Tween.Create().SetDefaultEase(TweenEase.ExponentialOut);
+  ``` 
+</details>
+
+<details>
+  <summary>
+    <code>Tween SetDefaultRelative(bool isRelative)</code>
+  </summary>
+  
+  >Sets the [isRelative] of [Add] or [Append] TweenActions, default false.
+  >
+  >Only sets the TweenAction whose [isRelative] is false.
+ 
+  ```C#
+  Tween.Create().SetDefaultRelative(true);
+  ``` 
+</details>
+
+#### Control
+
+<details>
+  <summary>
+    <code>Tween SetRecyclable(bool isRecyclable)</code>
+  </summary>
+  
+  >Sets the Tween to recyclable.
+  >
+  >If true and the Tween State is [Setup] or [Completed] or [Stopped] then recycle it immediately,
+   else wait until it is completed and recycle it.
+</details>
+
+<details>
+  <summary>
+    <code>Tween Play()</code>
+  </summary>
+  
+  >Plays the Tween.
+</details>
+
+<details>
+  <summary>
+    <code>Tween Rewind()</code>
+  </summary>
+  
+  >Rewinds the Tween. The Tween cannot be recyclable!
+</details>
+
+<details>
+  <summary>
+    <code>Tween Restart()</code>
+  </summary>
+  
+  >Restarts the Tween (Play or Rewind). The Tween cannot be recyclable!
+</details>
+
+<details>
+  <summary>
+    <code>Tween GotoStart()</code>
+  </summary>
+  
+  >Goto the start of Tween (Play or Rewind). The Tween cannot be recyclable!
+</details>
+
+<details>
+  <summary>
+    <code>GotoEnd()</code>
+  </summary>
+  
+  >Goto the end of Tween (Play or Rewind). The Tween cannot be recyclable!
+</details>
+
+<details>
+  <summary>
+    <code>Tween Reverse()</code>
+  </summary>
+  
+  >Reverses the Tween (Play or Rewind).
+  >
+  >If Tween is [Completed] then reverse the previous Play or Rewind,
+   else reverse the Playing or Rewinding.
+</details>
 
 
 ## TweenManager
