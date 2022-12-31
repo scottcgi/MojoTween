@@ -636,6 +636,16 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >[OnGetTargetFloat]: get the target values.  
   >[OnSetTargetFloat]: set the target values.  
   >[finalValue]      : the final value that will ease to. 
+     
+  ```C#
+  TweenAction.CreateFloat
+  (
+      ()      => getTargetValue,
+      (value) => setTargetValue = value,
+      targetFinalValue,
+      duration
+  );
+  ```     
 </details>
 
 
