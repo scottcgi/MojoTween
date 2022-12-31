@@ -503,6 +503,125 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Setup?
 </details>
 
+<details>
+  <summary>
+    <code>bool IsPlaying()</code>
+  </summary>
+  
+  >Whether the Tween state is Playing?
+</details>
+
+<details>
+  <summary>
+    <code>bool IsRewinding()</code>
+  </summary>
+  
+  >Whether the Tween state is Rewinding?
+</details>
+
+<details>
+  <summary>
+    <code>bool IsRunning()</code>
+  </summary>
+  
+  >Whether the Tween state is Playing or Rewinding? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsPaused()</code>
+  </summary>
+  
+  >Whether the Tween state is Paused? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsStopping()</code>
+  </summary>
+  
+  >Whether the Tween state is Stopping? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsStopped()</code>
+  </summary>
+  
+  >Whether the Tween state is Stopped? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsStoppedByPlay()</code>
+  </summary>
+  
+  >Whether the Tween state is Stopped by play? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsStoppedByRewind()</code>
+  </summary>
+  
+  >Whether the Tween state is Stopped by rewind?
+</details>
+
+<details>
+  <summary>
+    <code>bool IsCompleted()</code>
+  </summary>
+  
+  >Whether the Tween state is Completed?
+</details>
+
+<details>
+  <summary>
+    <code>bool IsCompletedByPlay()</code>
+  </summary>
+  
+  >Whether the Tween state is Completed by play? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsCompletedByRewind()</code>
+  </summary>
+  
+  >Whether the Tween state is Completed by rewind? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsRecycled()</code>
+  </summary>
+  
+  >Whether the Tween is Recycled? 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsOPRestart()</code>
+  </summary>
+  
+  >Whether the Tween operation is Restart? Uses in TweenAction callback. 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsOPGotoStart()</code>
+  </summary>
+  
+  >Whether the Tween operation is GotoStart? Uses in TweenAction callback. 
+</details>
+
+<details>
+  <summary>
+    <code>bool IsOPGotoEnd()</code>
+  </summary>
+  
+  >Whether the Tween operation is GotoEnd? Uses in TweenAction callback. 
+</details>
 
 ## TweenManager
 
