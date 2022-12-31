@@ -11,7 +11,7 @@ Both `Tween` and `TweenAction` support chained calls to set properties, includin
 The detailed relationships of engine objects  can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
 
 * [Tween](#tween)
-  * [Static](#static) 
+  * [Create Tween](#create-tween) 
   * [Append](#append)
   * [Add](#add)
   * [Add Delay](#add-delay)
@@ -22,23 +22,23 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Set Default](#set-default)
   * [Control](#control)
   * [Test State](#test-state)
+* [TweenAction](#tweenaction)
+  * [Create Action](#create-action) 
 * [TweenManager](#tweenmanager)
 * 
 
 
 ## Tween
 
-#### Static 
+#### Create Tween  
   
 * <details>
   <summary>
     <code>static Tween Create(bool isRecyclable = true)</code>
   </summary>
   
-  >Creates a Tween.
-  >
-  >If [isRecyclable] is [true] then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.
-  >
+  >Creates a Tween.  
+  >If [isRecyclable] is [true] then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.  
   >If [isRecyclable] is [false] then the Tween needs to be recycled manually by [SetRecyclable] — so the Tween can be [Restart] or [Rewind].
   
   ```C#
@@ -371,8 +371,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetOnRecycle(Action OnRecycle)</code>
   </summary>
   
-  >Sets the [OnRecycle] callback which is called when the Tween recycles. 
-  >
+  >Sets the [OnRecycle] callback which is called when the Tween recycles.   
   >Tip: can use it to clear data bound to Tweens.
  
   ```C#
@@ -388,8 +387,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetDefaultEase(TweenEase ease)</code>
   </summary>
   
-  >Sets the [ease] of [Add] or [Append] TweenAction, default Smooth.
-  >
+  >Sets the [ease] of [Add] or [Append] TweenAction, default Smooth.  
   >Only sets the TweenAction whose [ease] is Smooth.
  
   ```C#
@@ -402,8 +400,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetDefaultRelative(bool isRelative)</code>
   </summary>
   
-  >Sets the [isRelative] of [Add] or [Append] TweenActions, default false.
-  >
+  >Sets the [isRelative] of [Add] or [Append] TweenActions, default false.  
   >Only sets the TweenAction whose [isRelative] is false.
  
   ```C#
@@ -418,8 +415,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetRecyclable(bool isRecyclable)</code>
   </summary>
   
-  >Sets the Tween to recyclable.
-  >
+  >Sets the Tween to recyclable.  
   >If true and the Tween State is [Setup] or [Completed] or [Stopped] then recycle it immediately,
    else wait until it is completed and recycle it.
 </details>
@@ -437,7 +433,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween Rewind()</code>
   </summary>
   
-  >Rewinds the Tween. The Tween cannot be recyclable!
+  >Rewinds the Tween.  
+  >The Tween cannot be recyclable!
 </details>
 
 <details>
@@ -445,7 +442,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween Restart()</code>
   </summary>
   
-  >Restarts the Tween (Play or Rewind). The Tween cannot be recyclable!
+  >Restarts the Tween (Play or Rewind).  
+  >The Tween cannot be recyclable!
 </details>
 
 <details>
@@ -453,7 +451,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween GotoStart()</code>
   </summary>
   
-  >Goto the start of Tween (Play or Rewind). The Tween cannot be recyclable!
+  >Goto the start of Tween (Play or Rewind).  
+  >The Tween cannot be recyclable!
 </details>
 
 <details>
@@ -469,8 +468,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween Reverse()</code>
   </summary>
   
-  >Reverses the Tween (Play or Rewind).
-  >
+  >Reverses the Tween (Play or Rewind).  
   >If Tween is [Completed] then reverse the previous Play or Rewind,
    else reverse the Playing or Rewinding.
 </details>
@@ -480,8 +478,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween Stop()</code>
   </summary>
   
-  >Stops the Tween Playing or Rewinding.
-  >
+  >Stops the Tween Playing or Rewinding.  
   >If the Tween is recyclable then it will be recycled.
 </details>
 
@@ -604,7 +601,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>bool IsOPRestart()</code>
   </summary>
   
-  >Whether the Tween operation is Restart? Uses in TweenAction callback. 
+  >Whether the Tween operation is Restart?  
+  >Uses in TweenAction callback. 
 </details>
 
 <details>
@@ -612,7 +610,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>bool IsOPGotoStart()</code>
   </summary>
   
-  >Whether the Tween operation is GotoStart? Uses in TweenAction callback. 
+  >Whether the Tween operation is GotoStart?  
+  >Uses in TweenAction callback. 
 </details>
 
 <details>
@@ -620,8 +619,25 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>bool IsOPGotoEnd()</code>
   </summary>
   
-  >Whether the Tween operation is GotoEnd? Uses in TweenAction callback. 
+  >Whether the Tween operation is GotoEnd?  
+  >Uses in TweenAction callback. 
 </details>
+
+## TweenAction
+
+#### Create Action
+
+<details>
+  <summary>
+    <code>static TweenAction CreateFloat(Func<float> OnGetTargetFloat, Action<float> OnSetTargetFloat, float finalValue, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction ease to float.  
+  >[OnGetTargetFloat]: get the target values.  
+  >[OnSetTargetFloat]: set the target values.  
+  >[finalValue]      : the final value that will ease to. 
+</details>
+
 
 ## TweenManager
 
@@ -638,8 +654,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>static void StopAll()</code>
   </summary>
 
-  >Stops all updating Tweens Playing or Rewinding.
-  >
+  >Stops all updating Tweens Playing or Rewinding.  
   >If the Tween is recyclable then it will be recycled on completion.
 </details>
 
@@ -712,8 +727,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>static void DisposeAllNativeData()</code>
   </summary>
 
-  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit]. 
-  >
-  >If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, will cause an editor error when app quit.
+  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit].   
+  >If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, 
+   will cause an editor error when app quit.
 </details>
 
