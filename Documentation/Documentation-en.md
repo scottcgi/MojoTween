@@ -18,12 +18,14 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Add After](#add-after)
   * [Add Callback](#add-callback)
   * [Add Delay Callback](#add-delay-callback)
-  * [On Callback](#on-callback)
-  * [Set Default](#set-default)
+  * [Tween On Callback](#tween-on-callback)
+  * [Set Default Properties](#set-default-properties)
   * [Control](#control)
   * [Test State](#test-state)
 * [TweenAction](#tweenaction)
   * [Create Action](#create-action) 
+  * [Action On Callback](#action-on-callback)
+  * [Set Properties](#set-properties)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -328,7 +330,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
-#### On Callback
+#### Tween On Callback
 
 <details>
   <summary>
@@ -380,7 +382,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 </details>
 
 
-#### Set Default
+#### Set Default Properties
 
 <details>
   <summary>
@@ -679,6 +681,91 @@ The detailed relationships of engine objects  can be found in the [Code Architec
       duration
   );
   ```     
+</details>
+   
+<details>
+  <summary>
+    <code>static TweenAction CreateVector4(OnGetTargetVector4 OnGetTargetVector4, OnSetTargetVector4 OnSetTargetVector4, in Vector4 finalValues, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction ease to vector4.
+     
+  ```C#
+  TweenAction.CreateVector4
+  (
+      (out Vector4 vector4) => vector4       = graphic.color,
+      (in  Vector4 vector4) => graphic.color = vector4,
+      toColor,
+      duration
+  );
+  ```     
+</details>
+   
+#### Action On Callback
+
+<details>
+  <summary>
+    <code>TweenAction SetOnStart(Action OnStart)</code>
+  </summary>
+  
+  >Sets the [OnStart] callback which is called when the TweenAction starts (Play or Rewind).
+</details>
+   
+<details>
+  <summary>
+    <code>TweenAction SetOnComplete(Action OnComplete)</code>
+  </summary>
+  
+  >Sets the [OnComplete] callback which is called when the TweenAction completes (Play or Rewind).
+</details>     
+   
+#### Set Properties
+   
+<details>
+  <summary>
+    <code>TweenAction SetRelative(bool isRelative)</code>
+  </summary>
+  
+  >Sets the [isRelative] of all TweenActionValues, default false.
+</details>      
+   
+<details>
+  <summary>
+    <code>TweenAction SetRelativeAt(int index, bool isRelative)</code>
+  </summary>
+  
+  >Sets the [isRelative] of TweenActionValue at index, default false.
+</details>      
+   
+<details>
+  <summary>
+    <code>TweenAction SetEase(TweenEase ease)</code>
+  </summary>
+  
+  >Sets the [ease] of all TweenActionValues, default Smooth.
+</details>
+   
+<details>
+  <summary>
+    <code>TweenAction SetEaseAt(int index, TweenEase ease)</code>
+  </summary>
+  
+  >Sets the [ease] of TweenActionValue at index, default Smooth.
+</details>
+   
+<details>
+  <summary>
+    <code>TweenAction SetExtraParams(params float[] extraParams)</code>
+  </summary>
+  
+  >Sets the extra params to TweenEase.
+ 
+  ```C#
+  TweenAction.CreateFloat(...)
+             .SetRelative(true)
+             .SetEase(TweenEase.ShakeX)
+             .SetExtraParams(amplitude, speed);
+  ```
 </details>    
 
 
