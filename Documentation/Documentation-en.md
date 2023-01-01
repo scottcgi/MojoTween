@@ -335,7 +335,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 #### Tween On Callback
 
-<details>
+* <details>
   <summary>
     <code>Tween SetOnStart(Action OnStart)</code>
   </summary>
@@ -347,19 +347,19 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween SetOnComplete(Action OnComplete)</code>
   </summary>
   
   >Sets the [OnComplete] callback which is called when the Tween completes (Play or Rewind).
  
- ```C#
- Tween.Create().SetOnComplete(MyCompleteAction);
- ```
+  ```C#
+  Tween.Create().SetOnComplete(MyCompleteAction);
+  ```
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween SetOnStop(Action OnStop)</code>
   </summary>
@@ -371,7 +371,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween SetOnRecycle(Action OnRecycle)</code>
   </summary>
@@ -387,7 +387,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 #### Set Default Properties
 
-<details>
+* <details>
   <summary>
     <code>Tween SetDefaultEase(TweenEase ease)</code>
   </summary>
@@ -400,7 +400,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ``` 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween SetDefaultRelative(bool isRelative)</code>
   </summary>
@@ -415,7 +415,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 #### Control
 
-<details>
+* <details>
   <summary>
     <code>Tween SetRecyclable(bool isRecyclable)</code>
   </summary>
@@ -425,7 +425,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    else wait until it is completed and recycle it.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween Play()</code>
   </summary>
@@ -433,7 +433,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Plays the Tween.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween Rewind()</code>
   </summary>
@@ -442,7 +442,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >The Tween cannot be recyclable!
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween Restart()</code>
   </summary>
@@ -451,7 +451,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >The Tween cannot be recyclable!
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween GotoStart()</code>
   </summary>
@@ -460,7 +460,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >The Tween cannot be recyclable!
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween GotoEnd()</code>
   </summary>
@@ -468,7 +468,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Goto the end of Tween (Play or Rewind). The Tween cannot be recyclable!
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween Reverse()</code>
   </summary>
@@ -478,7 +478,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    else reverse the Playing or Rewinding.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>Tween Stop()</code>
   </summary>
@@ -487,7 +487,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >If the Tween is recyclable then it will be recycled.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>void Pause(bool isPause)</code>
   </summary>
@@ -497,7 +497,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 #### Test State
 
-<details>
+* <details>
   <summary>
     <code>bool IsSetup()</code>
   </summary>
@@ -505,7 +505,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Setup?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsPlaying()</code>
   </summary>
@@ -513,7 +513,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Playing?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsRewinding()</code>
   </summary>
@@ -521,7 +521,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Rewinding?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsRunning()</code>
   </summary>
@@ -529,7 +529,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Playing or Rewinding? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsPaused()</code>
   </summary>
@@ -537,7 +537,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Paused? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsStopping()</code>
   </summary>
@@ -545,7 +545,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Stopping? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsStopped()</code>
   </summary>
@@ -553,7 +553,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Stopped? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsStoppedByPlay()</code>
   </summary>
@@ -561,7 +561,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Stopped by play? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsStoppedByRewind()</code>
   </summary>
@@ -569,7 +569,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Stopped by rewind?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsCompleted()</code>
   </summary>
@@ -577,7 +577,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Completed?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsCompletedByPlay()</code>
   </summary>
@@ -585,7 +585,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Completed by play? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsCompletedByRewind()</code>
   </summary>
@@ -593,7 +593,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween state is Completed by rewind? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsRecycled()</code>
   </summary>
@@ -601,7 +601,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Whether the Tween is Recycled? 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsOPRestart()</code>
   </summary>
@@ -610,7 +610,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Uses in TweenAction callback. 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsOPGotoStart()</code>
   </summary>
@@ -619,7 +619,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Uses in TweenAction callback. 
 </details>
 
-<details>
+* <details>
   <summary>
     <code>bool IsOPGotoEnd()</code>
   </summary>
@@ -630,7 +630,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 ## TweenExtensions
 
-<details>
+* <details>
   <summary>
     <code>static void TogglePause(this Tween tween)</code>
   </summary>
@@ -638,7 +638,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Toggles the Tween state between Playing or Rewinding and Pausing.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnStartByPlay(this Tween tween, Action OnStartByPlay)</code>
   </summary>
@@ -646,7 +646,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween starts by play.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnStartByRewind(this Tween tween, Action OnStartByRewind)</code>
   </summary>
@@ -654,7 +654,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween starts by rewind.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnStopByPlay(this Tween tween, Action OnStopByPlay)</code>
   </summary>
@@ -662,7 +662,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween stops by play.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnStopByRewind(this Tween tween, Action OnStopByRewind)</code>
   </summary>
@@ -670,7 +670,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween stops by rewind.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnCompleteByPlay(this Tween tween, Action OnCompleteByPlay)</code>
   </summary>
@@ -678,7 +678,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween completes by play.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
   </summary>
@@ -686,7 +686,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween completes by rewind.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
   </summary>
@@ -694,7 +694,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the callback when the Tween completes by rewind.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static Tween SetLoops(this Tween tween, int loops, bool isRewindToStart = false, Action OnCompleteByLoops = null)</code>
   </summary>
@@ -718,7 +718,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 #### Create Action
 
-<details>
+* <details>
   <summary>
     <code>static TweenAction CreateFloat(Func<float> OnGetTargetFloat, Action<float> OnSetTargetFloat, float finalValue, float duration)</code>
   </summary>
@@ -736,7 +736,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```     
 </details>
    
-<details>
+* <details>
   <summary>
     <code>static TweenAction CreateVector2(OnGetTargetVector2 OnGetTargetVector2, OnSetTargetVector2 OnSetTargetVector2, in Vector2 finalValues, float duration)</code>
   </summary>
@@ -754,7 +754,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```     
 </details>
    
-<details>
+* <details>
   <summary>
     <code>static TweenAction CreateVector3(OnGetTargetVector3 OnGetTargetVector3, OnSetTargetVector3 OnSetTargetVector3, in Vector3 finalValues, float duration)</code>
   </summary>
@@ -772,7 +772,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   ```     
 </details>
    
-<details>
+* <details>
   <summary>
     <code>static TweenAction CreateVector4(OnGetTargetVector4 OnGetTargetVector4, OnSetTargetVector4 OnSetTargetVector4, in Vector4 finalValues, float duration)</code>
   </summary>
@@ -792,7 +792,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 #### Action On Callback
 
-<details>
+* <details>
   <summary>
     <code>TweenAction SetOnStart(Action OnStart)</code>
   </summary>
@@ -800,7 +800,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the [OnStart] callback which is called when the TweenAction starts (Play or Rewind).
 </details>
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetOnComplete(Action OnComplete)</code>
   </summary>
@@ -810,7 +810,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 #### Set Properties
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetRelative(bool isRelative)</code>
   </summary>
@@ -818,7 +818,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the [isRelative] of all TweenActionValues, default false.
 </details>      
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetRelativeAt(int index, bool isRelative)</code>
   </summary>
@@ -826,7 +826,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the [isRelative] of TweenActionValue at index, default false.
 </details>      
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetEase(TweenEase ease)</code>
   </summary>
@@ -834,7 +834,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the [ease] of all TweenActionValues, default Smooth.
 </details>
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetEaseAt(int index, TweenEase ease)</code>
   </summary>
@@ -842,7 +842,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets the [ease] of TweenActionValue at index, default Smooth.
 </details>
    
-<details>
+* <details>
   <summary>
     <code>TweenAction SetExtraParams(params float[] extraParams)</code>
   </summary>
@@ -859,19 +859,19 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 ## TweenActionExtensions
    
-<details>
+* <details>
   <summary>
     <code>static Tween Play(this TweenAction action)</code>
   </summary>
   
   >Plays the TweenAction.
   
- ```C#
- audioSource.ActionVolumeTo(toValue, duration).Play();
- ```
+  ```C#
+  audioSource.ActionVolumeTo(toValue, duration).Play();
+  ```
 </details>
    
-<details>
+* <details>
   <summary>
     <code>static Tween Play(this TweenAction action)</code>
   </summary>
@@ -881,7 +881,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 ## TweenManager
 
-<details>
+* <details>
   <summary>
     <code>static bool IsAnyUpdating()</code>
   </summary>
@@ -889,7 +889,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Is there any Tween updating?
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void StopAll()</code>
   </summary>
@@ -898,7 +898,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >If the Tween is recyclable then it will be recycled on completion.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void RestartAll()</code>
   </summary>
@@ -906,7 +906,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Restarts all updating Tweens Playing or Rewinding.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void ReverseAll()</code>
   </summary>
@@ -914,7 +914,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Reverses all updating Tweens Playing or Rewinding.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void RewindAll()</code>
   </summary>
@@ -922,7 +922,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Rewinds all updating Tweens Playing or Rewinding.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static PauseAll(bool isPause)</code>
   </summary>
@@ -930,7 +930,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Pauses or resumes all updating Tweens Playing or Rewinding.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void TogglePauseAll()</code>
   </summary>
@@ -938,7 +938,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Toggles all updating Tweens state between Playing or Rewinding and Paused.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void SetRecyclableAll(bool isRecyclable)</code>
   </summary>
@@ -946,7 +946,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Sets all updating Tweens to recyclable.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void RecycleAll()</code>
   </summary>
@@ -954,7 +954,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Stops all updating Tweens and Recycles all unrecycled Tweens.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void Update()</code>
   </summary>
@@ -962,7 +962,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Updates all Tweens, called every frame.
 </details>
 
-<details>
+* <details>
   <summary>
     <code>static void DisposeAllNativeData()</code>
   </summary>
