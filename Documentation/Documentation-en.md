@@ -632,21 +632,54 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>static TweenAction CreateFloat(Func<float> OnGetTargetFloat, Action<float> OnSetTargetFloat, float finalValue, float duration)</code>
   </summary>
   
-  >Creates a TweenAction ease to float.  
-  >[OnGetTargetFloat]: get the target values.  
-  >[OnSetTargetFloat]: set the target values.  
-  >[finalValue]      : the final value that will ease to. 
+  >Creates a TweenAction ease to float.
      
   ```C#
   TweenAction.CreateFloat
   (
-      ()      => getTargetValue,
-      (value) => setTargetValue = value,
-      targetFinalValue,
+      ()      => transform.position.x,
+      (value) => transform.SetPositionX(value),
+      toFloatX,
       duration
   );
   ```     
 </details>
+   
+<details>
+  <summary>
+    <code>static TweenAction CreateVector2(OnGetTargetVector2 OnGetTargetVector2, OnSetTargetVector2 OnSetTargetVector2, in Vector2 finalValues, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction ease to vector2.
+     
+  ```C#
+  TweenAction.CreateVector2
+  (
+      (out Vector2 vector2) => vector2 = transform.position,
+      (in  Vector2 vector2) => transform.SetPositionXY(vector2),
+      toV2,
+      duration
+  );
+  ```     
+</details>
+   
+<details>
+  <summary>
+    <code>static TweenAction CreateVector3(OnGetTargetVector3 OnGetTargetVector3, OnSetTargetVector3 OnSetTargetVector3, in Vector3 finalValues, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction ease to vector3. 
+     
+  ```C#
+  TweenAction.CreateVector3
+  (
+      (out Vector3 vector3) => vector3 = transform.position,
+      (in  Vector3 vector3) => transform.position = vector3,
+      toV3,
+      duration
+  );
+  ```     
+</details>    
 
 
 ## TweenManager
