@@ -22,12 +22,13 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Set Default Properties](#set-default-properties)
   * [Control](#control)
   * [Test State](#test-state)
+* [TweenExtensions](#tweenextensions)
+* 
 * [TweenAction](#tweenaction)
   * [Create Action](#create-action) 
   * [Action On Callback](#action-on-callback)
   * [Set Properties](#set-properties)
 * [TweenActionExtensions](#tweenactionextensions)
-* 
 * [TweenManager](#tweenmanager)
 * 
 
@@ -627,6 +628,92 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >Uses in TweenAction callback. 
 </details>
 
+## TweenExtensions
+
+<details>
+  <summary>
+    <code>static void TogglePause(this Tween tween)</code>
+  </summary>
+  
+  >Toggles the Tween state between Playing or Rewinding and Pausing.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnStartByPlay(this Tween tween, Action OnStartByPlay)</code>
+  </summary>
+  
+  >Sets the callback when the Tween starts by play.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnStartByRewind(this Tween tween, Action OnStartByRewind)</code>
+  </summary>
+  
+  >Sets the callback when the Tween starts by rewind.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnStopByPlay(this Tween tween, Action OnStopByPlay)</code>
+  </summary>
+  
+  >Sets the callback when the Tween stops by play.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnStopByRewind(this Tween tween, Action OnStopByRewind)</code>
+  </summary>
+  
+  >Sets the callback when the Tween stops by rewind.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnCompleteByPlay(this Tween tween, Action OnCompleteByPlay)</code>
+  </summary>
+  
+  >Sets the callback when the Tween completes by play.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
+  </summary>
+  
+  >Sets the callback when the Tween completes by rewind.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
+  </summary>
+  
+  >Sets the callback when the Tween completes by rewind.
+</details>
+
+<details>
+  <summary>
+    <code>static Tween SetLoops(this Tween tween, int loops, bool isRewindToStart = false, Action OnCompleteByLoops = null)</code>
+  </summary>
+  
+  >Sets the number of Tween play repeats.  
+  >Repeated calls will add [loops] and [OnCompleteByLoops].  
+  >
+  >[loops]            : -1 means infinite loops.  
+  >[isRewindToStart]  : Whether the Tween to rewinds when a loop is completed? — false to restart.  
+  >[OnCompleteByLoops]: Callback when all loops are completed.  
+ 
+  ```C#
+  tween.SetLoops(1)
+       .SetLoops(2, true, () => tween.Rewind().SetOnComplete(() => tween.SetRecyclable(true)))
+       .Play();  
+  ```
+</details>
+
+
 ## TweenAction
 
 #### Create Action
@@ -790,8 +877,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Plays the delay TweenAction.
-</details>   
-   
+</details>     
 
 ## TweenManager
 
