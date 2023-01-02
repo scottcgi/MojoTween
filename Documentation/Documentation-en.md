@@ -848,7 +848,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction SetExtraParams(params float[] extraParams)</code>
   </summary>
   
-  >Sets the extra params to TweenEase.
+  >Sets the [extraParams] to TweenEase.
  
   ```C#
   TweenAction.CreateFloat(...)
@@ -922,7 +922,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target].
-</details>   
+</details>
    
 
 ## TweenManager
