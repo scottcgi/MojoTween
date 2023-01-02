@@ -43,9 +43,10 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>static Tween Create(bool isRecyclable = true)</code>
   </summary>
   
-  >Creates a Tween.  
-  >If [isRecyclable] is [true] then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.  
-  >If [isRecyclable] is [false] then the Tween needs to be recycled manually by [SetRecyclable] — so the Tween can be [Restart] or [Rewind].
+  >Creates a Tween.
+  >
+  >If [isRecyclable] is true then the Tween will be auto recycled when it is completed — so don't hold a Tween and always create a new one.    
+  >If [isRecyclable] is false then the Tween needs to be recycled manually by SetRecyclable — so the Tween can be Restart or Rewind.
   
   ```C#
   // auto recycle
@@ -393,7 +394,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetDefaultEase(TweenEase ease)</code>
   </summary>
   
-  >Sets the [ease] of [Add] or [Append] TweenAction, default Smooth.  
+  >Sets the [ease] of Add or Append TweenAction, default Smooth.  
   >Only sets the TweenAction whose [ease] is Smooth.
  
   ```C#
@@ -406,7 +407,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>Tween SetDefaultRelative(bool isRelative)</code>
   </summary>
   
-  >Sets the [isRelative] of [Add] or [Append] TweenActions, default false.  
+  >Sets the [isRelative] of Add or Append TweenActions, default false.  
   >Only sets the TweenAction whose [isRelative] is false.
  
   ```C#
@@ -422,7 +423,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Sets the Tween to recyclable.  
-  >If true and the Tween State is [Setup] or [Completed] or [Stopped] then recycle it immediately,
+  >If true and the Tween State is Setup or Completed or Stopped then recycle it immediately,
    else wait until it is completed and recycle it.
 </details>
 
@@ -475,7 +476,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Reverses the Tween (Play or Rewind).  
-  >If Tween is [Completed] then reverse the previous Play or Rewind,
+  >If Tween is Completed then reverse the previous Play or Rewind,
    else reverse the Playing or Rewinding.
 </details>
 
@@ -1012,8 +1013,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>static void DisposeAllNativeData()</code>
   </summary>
 
-  >Disposes all native data with [Allocator.Persistent], called when [ApplicationQuit].   
-  >If not dispose the native data, calling the [Finalize] of [DisposeSentinel] by GC, 
+  >Disposes all native data with Allocator.Persistent, called when ApplicationQuit.  
+  >If not dispose the native data, calling the Finalize of DisposeSentinel by GC, 
    will cause an editor error when app quit.
 </details>
 
