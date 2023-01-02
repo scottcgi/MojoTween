@@ -23,12 +23,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Control](#control)
   * [Test State](#test-state)
 * [TweenExtensions](#tweenextensions)
-* 
 * [TweenAction](#tweenaction)
   * [Create Action](#create-action) 
   * [Action On Callback](#action-on-callback)
   * [Set Properties](#set-properties)
 * [TweenActionExtensions](#tweenactionextensions)
+* [TweenActionAPIExtensions](#tweenactionappiextensions)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -878,6 +878,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Plays the delay TweenAction.
 </details>     
+   
+## TweenActionAPIExtensions   
 
 ## TweenManager
 
