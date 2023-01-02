@@ -28,7 +28,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Action On Callback](#action-on-callback)
   * [Set Properties](#set-properties)
 * [TweenActionExtensions](#tweenactionextensions)
-* [TweenActionAPIExtensions](#tweenactionappiextensions)
+* [TweenActionAPIExtensions](#tweenactionapiextensions)
+  * [Transform Move](#transform-move) 
 * [TweenManager](#tweenmanager)
 * 
 
@@ -632,7 +633,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static void TogglePause(this Tween tween)</code>
+    <code>void TogglePause()</code>
   </summary>
   
   >Toggles the Tween state between Playing or Rewinding and Pausing.
@@ -640,7 +641,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnStartByPlay(this Tween tween, Action OnStartByPlay)</code>
+    <code>Tween SetOnStartByPlay(Action OnStartByPlay)</code>
   </summary>
   
   >Sets the callback when the Tween starts by play.
@@ -648,7 +649,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnStartByRewind(this Tween tween, Action OnStartByRewind)</code>
+    <code>Tween SetOnStartByRewind(Action OnStartByRewind)</code>
   </summary>
   
   >Sets the callback when the Tween starts by rewind.
@@ -656,7 +657,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnStopByPlay(this Tween tween, Action OnStopByPlay)</code>
+    <code>Tween SetOnStopByPlay(Action OnStopByPlay)</code>
   </summary>
   
   >Sets the callback when the Tween stops by play.
@@ -664,7 +665,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnStopByRewind(this Tween tween, Action OnStopByRewind)</code>
+    <code>Tween SetOnStopByRewind(Action OnStopByRewind)</code>
   </summary>
   
   >Sets the callback when the Tween stops by rewind.
@@ -672,7 +673,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnCompleteByPlay(this Tween tween, Action OnCompleteByPlay)</code>
+    <code>Tween SetOnCompleteByPlay(Action OnCompleteByPlay)</code>
   </summary>
   
   >Sets the callback when the Tween completes by play.
@@ -680,7 +681,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
+    <code>Tween SetOnCompleteByRewind(Action OnCompleteByRewind)</code>
   </summary>
   
   >Sets the callback when the Tween completes by rewind.
@@ -688,7 +689,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetOnCompleteByRewind(this Tween tween, Action OnCompleteByRewind)</code>
+    <code>Tween SetOnCompleteByRewind(Action OnCompleteByRewind)</code>
   </summary>
   
   >Sets the callback when the Tween completes by rewind.
@@ -696,7 +697,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>static Tween SetLoops(this Tween tween, int loops, bool isRewindToStart = false, Action OnCompleteByLoops = null)</code>
+    <code>Tween SetLoops(int loops, bool isRewindToStart = false, Action OnCompleteByLoops = null)</code>
   </summary>
   
   >Sets the number of Tween play repeats.  
@@ -712,7 +713,6 @@ The detailed relationships of engine objects  can be found in the [Code Architec
        .Play();  
   ```
 </details>
-
 
 ## TweenAction
 
@@ -861,7 +861,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 * <details>
   <summary>
-    <code>static Tween Play(this TweenAction action)</code>
+    <code>Tween Play()</code>
   </summary>
   
   >Plays the TweenAction.
@@ -873,13 +873,56 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 * <details>
   <summary>
-    <code>static Tween Play(this TweenAction action)</code>
+    <code>Tween PlayDelay(float delay)</code>
   </summary>
   
   >Plays the delay TweenAction.
 </details>     
    
-## TweenActionAPIExtensions   
+## TweenActionAPIExtensions
+   
+#### Transform Move
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveX/Y/Z(float x/y/z, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position x/y/z to [x/y/z].
+</details>   
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position xy to [v2]/[xy]/[target].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMove(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target].
+</details>   
+   
 
 ## TweenManager
 
