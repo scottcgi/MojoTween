@@ -31,7 +31,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 * [TweenActionAPIExtensions](#tweenactionapiextensions)
   * [Transform Move](#transform-move)
   * [Transform Local Move](#transform-local-move)
-  * [Transform Scale](#transform-scale) 
+  * [Transform Scale](#transform-scale)
+  * [Transform Rotate](#transform-rotate)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1008,7 +1009,49 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Creates a TweenAction that scales the transform localScale to [v3]/[xyz]/[value]/[target].
-</details>   
+</details>
+   
+#### Transform Rotate   
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionRotateX/Y/Z(float x/float y/float z, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that rotates the transform eulerAngles x to [x]/[y]/[z].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionRotateXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that rotates the transform eulerAngles xy to [v2]/[xy]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionRotateXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that rotates the transform eulerAngles xz to [v2]/[xz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionRotateYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that rotates the transform eulerAngles yz to [v2]/[xz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionRotate(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that rotates the transform eulerAngles to [v3]/[xyz]/[target].
+</details>    
    
 
 ## TweenManager
