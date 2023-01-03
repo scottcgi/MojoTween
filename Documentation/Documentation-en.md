@@ -29,7 +29,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Set Properties](#set-properties)
 * [TweenActionExtensions](#tweenactionextensions)
 * [TweenActionAPIExtensions](#tweenactionapiextensions)
-  * [Transform Move](#transform-move) 
+  * [Transform Move](#transform-move)
+  * [Transform Local Move](#transform-local-move)
+  * [Transform Scale](#transform-scale) 
 * [TweenManager](#tweenmanager)
 * 
 
@@ -923,6 +925,90 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target].
 </details>
+   
+#### Transform Local Move
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveX/Y/Z(float x/float y/float z, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform localPosition x to [x]/[y]/[z].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform localPosition xz to [v2]/[xz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform localPosition yz to [v2]/[yz]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMove(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target].
+</details>    
+   
+#### Transform Scale 
+
+* <details>
+  <summary>
+    <code>TweenAction ActionScaleX/Y/Z(float x/float y/float z, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that scales the transform localScale x to [x]/[y]/[z].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionScaleXY(in Vector2 v2/float x, float y/float value/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that scales the transform localScale xy to [v2]/[xy]/[value]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionScaleXZ(in Vector2 v2/float x, float z/float value/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that scales the transform localScale xz to [v2]/[xz]/[value]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionScaleYZ(in Vector2 v2/float y, float z/float value/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that scales the transform localScale yz to [v2]/[yz]/[value]/[target].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionScale(in Vector3 v3/float x, float y, float z/float value/Transform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that scales the transform localScale to [v3]/[xyz]/[value]/[target].
+</details>   
    
 
 ## TweenManager
