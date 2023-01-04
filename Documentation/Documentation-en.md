@@ -34,6 +34,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Transform Scale](#transform-scale)
   * [Transform Rotate](#transform-rotate)
   * [Transform Local Rotate](#transform-local-rotate)
+  * [Transform Shake Position](#transform-shake-position)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1094,6 +1095,26 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   </summary>
   
   >Creates a TweenAction that rotates the transform localEulerAngles to [v3]/[xyz]/[target].
+</details>
+   
+#### Transform Shake Position
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakePositionX/Y/Z(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform position x/y/z by [amplitude] and [speed].  
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakePositionXY/XZ/YZ(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform position xy/xz/yz by [amplitude] and [speed].  
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>    
    
 
