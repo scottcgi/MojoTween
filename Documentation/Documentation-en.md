@@ -1115,7 +1115,16 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that shakes the transform position xy/xz/yz by [amplitude] and [speed].  
   >Note: don't change the isRelative and TweenEase of this TweenAction.
-</details>    
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakePosition(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform position by [amplitude] and [speed].  
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>      
    
 
 ## TweenManager
