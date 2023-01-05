@@ -37,6 +37,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Transform Shake Position](#transform-shake-position)
   * [Transform Shake Scale](#transform-shake-scale)
   * [Transform Shake Rotation](#transform-shake-rotation)
+  * [Transform Bezier2 Move](#transform-bezier2-move)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1184,6 +1185,44 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that shakes the transform rotation by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+#### Transform Bezier2 Move
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionBezier2MoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 pos/float posX, float posY/Transform pos, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position xy to [v2]/[xy]/[target] by bezier2 with [pos].    
+  >Note: don't change the TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionBezier2MoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 pos/float posX, float posZ/Transform pos, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target] by bezier2 with [pos].    
+  >Note: don't change the TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionBezier2MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 pos/float posY, float posZ/Transform pos, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] by bezier2 with [pos].    
+  >Note: don't change the TweenEase of this TweenAction.
+</details>     
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionBezier2Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 pos/float posX, float posY, floatZ/Transform pos, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier2 with [pos].      
+  >Note: don't change the TweenEase of this TweenAction.
 </details>   
        
    
