@@ -35,6 +35,8 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Transform Rotate](#transform-rotate)
   * [Transform Local Rotate](#transform-local-rotate)
   * [Transform Shake Position](#transform-shake-position)
+  * [Transform Shake Scale](#transform-shake-scale)
+  * [Transform Shake Rotation](#transform-shake-rotation)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1124,7 +1126,66 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that shakes the transform position by [amplitude] and [speed].  
   >Note: don't change the isRelative and TweenEase of this TweenAction.
-</details>      
+</details>
+   
+#### Transform Shake Scale
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeScaleX/Y/Z(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform scale x/y/z by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeScaleXY/XZ/YZ(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform scale xy/xz/yz by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeScale(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform scale by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+#### Transform Shake Rotation
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeRotationX/Y/Z(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform rotation x/y/z by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details> 
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeRotationXY/XZ/YZ(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform rotation xy/xz/yz by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionShakeRotation(float amplitude, float speed, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that shakes the transform rotation by [amplitude] and [speed].   
+  >Note: don't change the isRelative and TweenEase of this TweenAction.
+</details>   
+       
    
 
 ## TweenManager
