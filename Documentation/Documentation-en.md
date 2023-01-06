@@ -271,8 +271,6 @@ The detailed relationships of engine objects  can be found in the [Code Architec
        .Play(); 
   ```
 </details> 
-        
-</details>
 
 * <details>
   <summary>
@@ -909,7 +907,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveX/Y/Z(float x/y/z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position x/y/z to [x/y/z].
+  >Creates a TweenAction that moves the Transform position x/y/z to [x/y/z].
 </details>   
    
 * <details>
@@ -917,7 +915,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target].
 </details>
 
 * <details>
@@ -925,7 +923,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target].
 </details>
    
 * <details>
@@ -933,7 +931,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target].
 </details>
    
 * <details>
@@ -941,7 +939,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMove(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target].
 </details>
    
 #### Transform Local Move
@@ -951,7 +949,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalMoveX/Y/Z(float x/float y/float z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition x/y/z to [x]/[y]/[z].
+  >Creates a TweenAction that moves the Transform localPosition x/y/z to [x]/[y]/[z].
 </details>
    
 * <details>
@@ -959,7 +957,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalMoveXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target].
 </details>
    
 * <details>
@@ -967,7 +965,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalMoveXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target].
 </details>
    
 * <details>
@@ -975,7 +973,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalMoveYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target].
 </details>
    
 * <details>
@@ -983,7 +981,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalMove(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target].
 </details>    
    
 #### Transform Scale 
@@ -993,7 +991,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionScaleX/Y/Z(float x/float y/float z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the transform localScale x/y/z to [x]/[y]/[z].
+  >Creates a TweenAction that scales the Transform localScale x/y/z to [x]/[y]/[z].
 </details>
    
 * <details>
@@ -1001,7 +999,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionScaleXY(in Vector2 v2/float x, float y/float value/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the transform localScale xy to [v2]/[xy]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale xy to [v2]/[xy]/[value]/[target].
 </details>
    
 * <details>
@@ -1009,7 +1007,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionScaleXZ(in Vector2 v2/float x, float z/float value/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the transform localScale xz to [v2]/[xz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale xz to [v2]/[xz]/[value]/[target].
 </details>
    
 * <details>
@@ -1017,7 +1015,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionScaleYZ(in Vector2 v2/float y, float z/float value/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the transform localScale yz to [v2]/[yz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale yz to [v2]/[yz]/[value]/[target].
 </details>
    
 * <details>
@@ -1025,7 +1023,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionScale(in Vector3 v3/float x, float y, float z/float value/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the transform localScale to [v3]/[xyz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale to [v3]/[xyz]/[value]/[target].
 </details>
    
 #### Transform Rotate   
@@ -1035,7 +1033,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionRotateX/Y/Z(float x/float y/float z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform eulerAngles x/y/z to [x]/[y]/[z].
+  >Creates a TweenAction that rotates the Transform eulerAngles x/y/z to [x]/[y]/[z].
 </details>
    
 * <details>
@@ -1043,7 +1041,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionRotateXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform eulerAngles xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles xy to [v2]/[xy]/[target].
 </details>
    
 * <details>
@@ -1051,7 +1049,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionRotateXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform eulerAngles xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles xz to [v2]/[xz]/[target].
 </details>
    
 * <details>
@@ -1059,7 +1057,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionRotateYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform eulerAngles yz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles yz to [v2]/[xz]/[target].
 </details>
    
 * <details>
@@ -1067,7 +1065,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionRotate(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform eulerAngles to [v3]/[xyz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles to [v3]/[xyz]/[target].
 </details>
    
 #### Transform Local Rotate
@@ -1077,7 +1075,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalRotateX/Y/Z(float x/float y/float z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform localEulerAngles x/y/z to [x]/[y]/[z].
+  >Creates a TweenAction that rotates the Transform localEulerAngles x/y/z to [x]/[y]/[z].
 </details>
    
 * <details>
@@ -1085,7 +1083,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalRotateXY(in Vector2 v2/float x, float y/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform localEulerAngles xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles xy to [v2]/[xy]/[target].
 </details>
    
 * <details>
@@ -1093,7 +1091,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalRotateXZ(in Vector2 v2/float x, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform localEulerAngles xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles xz to [v2]/[xz]/[target].
 </details>
    
 * <details>
@@ -1101,7 +1099,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalRotateYZ(in Vector2 v2/float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform localEulerAngles yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles yz to [v2]/[yz]/[target].
 </details>
    
 * <details>
@@ -1109,7 +1107,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionLocalRotate(in Vector3 v3/float x, float y, float z/Transform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the transform localEulerAngles to [v3]/[xyz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles to [v3]/[xyz]/[target].
 </details>
    
 #### Transform Shake Position
@@ -1119,7 +1117,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakePositionX/Y/Z(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform position x/y/z by [amplitude] and [speed].  
+  >Creates a TweenAction that shakes the Transform position x/y/z by [amplitude] and [speed].  
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1128,7 +1126,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakePositionXY/XZ/YZ(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform position xy/xz/yz by [amplitude] and [speed].  
+  >Creates a TweenAction that shakes the Transform position xy/xz/yz by [amplitude] and [speed].  
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1137,7 +1135,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakePosition(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform position by [amplitude] and [speed].  
+  >Creates a TweenAction that shakes the Transform position by [amplitude] and [speed].  
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1148,7 +1146,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeScaleX/Y/Z(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform scale x/y/z by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform scale x/y/z by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1157,7 +1155,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeScaleXY/XZ/YZ(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform scale xy/xz/yz by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform scale xy/xz/yz by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1166,7 +1164,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeScale(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform scale by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform scale by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1177,7 +1175,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeRotationX/Y/Z(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform rotation x/y/z by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform rotation x/y/z by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details> 
    
@@ -1186,7 +1184,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeRotationXY/XZ/YZ(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform rotation xy/xz/yz by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform rotation xy/xz/yz by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1195,7 +1193,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionShakeRotation(float amplitude, float speed, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that shakes the transform rotation by [amplitude] and [speed].   
+  >Creates a TweenAction that shakes the Transform rotation by [amplitude] and [speed].   
   >Note: don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
@@ -1206,7 +1204,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2MoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xy to [v2]/[xy]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1215,7 +1213,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2MoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1224,7 +1222,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
@@ -1233,7 +1231,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1244,7 +1242,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2LocalMoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target] by bezier2 with [controlPos].  
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier2 with [controlPos].  
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1253,7 +1251,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2LocalMoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1262,7 +1260,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2LocalMoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
@@ -1271,7 +1269,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier2LocalMove(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
 </details>   
    
@@ -1282,7 +1280,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3MoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1291,7 +1289,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3MoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1300,7 +1298,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
@@ -1309,7 +1307,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>   
    
@@ -1320,7 +1318,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3LocalMoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1329,7 +1327,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3LocalMoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1338,7 +1336,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3LocalMoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
@@ -1347,7 +1345,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionBezier3LocalMove(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
@@ -1358,7 +1356,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveAnchoredX/Y/Z(float x/float y/float z, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the rectTransform anchoredPosition x/y/z to [x]/[y]/[z].
+  >Creates a TweenAction that moves the RectTransform anchoredPosition x/y/z to [x]/[y]/[z].
 </details>
    
 * <details>
@@ -1366,7 +1364,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveAnchoredXY(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the rectTransform anchoredPosition xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the RectTransform anchoredPosition xy to [v2]/[xy]/[target].
 </details>    
    
 * <details>
@@ -1374,7 +1372,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionMoveAnchored(in Vector3 v3/float x, float y, float z/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the rectTransform anchoredPosition3D to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the RectTransform anchoredPosition3D to [v3]/[xyz]/[target].
 </details>
    
 #### RectTransform OffsetMax   
@@ -1384,7 +1382,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMaxX/Y(float x/float y, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform offsetMax x/y to [x]/[y].
+  >Creates a TweenAction that changes the RectTransform offsetMax x/y to [x]/[y].
 </details>
    
 * <details>
@@ -1392,7 +1390,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMax(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform offsetMax to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform offsetMax to [v2]/[xy]/[target].
 </details>   
    
 #### RectTransform OffsetMin
@@ -1402,7 +1400,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMinX/Y(float x/float y, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform offsetMin x/y to [x]/[y].
+  >Creates a TweenAction that changes the RectTransform offsetMin x/y to [x]/[y].
 </details>
    
 * <details>
@@ -1410,7 +1408,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMin(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform offsetMin to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform offsetMin to [v2]/[xy]/[target].
 </details>
 
 #### RectTransform SizeDelta
@@ -1420,7 +1418,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionSizeDeltaX/Y(float x/float y, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform sizeDelta x/y to [x]/[y].
+  >Creates a TweenAction that changes the RectTransform sizeDelta x/y to [x]/[y].
 </details>
    
 * <details>
@@ -1428,7 +1426,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionSizeDelta(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform sizeDelta to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform sizeDelta to [v2]/[xy]/[target].
 </details>
 
 #### Graphic Color
@@ -1539,14 +1537,37 @@ The detailed relationships of engine objects  can be found in the [Code Architec
 
 * <details>
   <summary>
-    <code>TweenAction ActionFloat/Int/Vector/ColorTo(string name, float value/int value/in Vector4 v4/in Color color, float duration)</code>
+    <code>TweenAction ActionFloatColorTo(string name, float value, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the Material float/int/vector/color to [value]/[value]/[v4]/[color] by [name].
+  >Creates a TweenAction that changes the Material float to [value] by [name].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionIntTo(string name, int value, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Material int to [value] by [name].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionVectorTo(string name, in Vector4 v4, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Material vector to [v4] by [name].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionColorTo(string name, in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Material color to [color] by [name].
 </details>
 
 
-   
 ## TweenManager
 
 * <details>
