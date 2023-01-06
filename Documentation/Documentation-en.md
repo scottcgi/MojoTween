@@ -1206,6 +1206,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2MoveXY(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2MoveXY(toX, toY,    controlPosX, controlPosY, duration);
+  transform.ActionBezier2MoveXY(toTransform, controlPosTransform,      duration);
+  ```
 </details>
    
 * <details>
@@ -1215,6 +1221,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2MoveXZ(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2MoveXZ(toX, toZ,    controlPosX, controlPosZ, duration);
+  transform.ActionBezier2MoveXZ(toTransform, controlPosTransform,      duration);
+  ```  
 </details>
    
 * <details>
@@ -1224,6 +1236,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2MoveYZ(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2MoveYZ(toY, toZ,    controlPosY, controlPosZ, duration);
+  transform.ActionBezier2MoveYZ(toTransform, controlPosTransform,      duration);
+  ```    
 </details>     
    
 * <details>
@@ -1233,6 +1251,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2Move(toVector3,     controlPosVector3,                     duration);
+  transform.ActionBezier2Move(toX, toY, toZ, controlPosX, controlPosY, controlPosZ, duration);
+  transform.ActionBezier2Move(toTransform,   controlPosTransform,                   duration);
+  ```    
 </details>
    
 #### Transform Bezier Quadratic Local Move
@@ -1244,6 +1268,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier2 with [controlPos].  
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2LocalMoveXY(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2LocalMoveXY(toX, toY,    controlPosX, controlPosY, duration);
+  transform.ActionBezier2LocalMoveXY(toTransform, controlPosTransform,      duration);
+  ```  
 </details>
    
 * <details>
@@ -1253,6 +1283,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2LocalMoveXZ(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2LocalMoveXZ(toX, toZ,    controlPosX, controlPosZ, duration);
+  transform.ActionBezier2LocalMoveXZ(toTransform, controlPosTransform,      duration);
+  ```    
 </details>
    
 * <details>
@@ -1262,6 +1298,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2LocalMoveYZ(toVector2,   controlPosVector2,        duration);
+  transform.ActionBezier2LocalMoveYZ(toY, toZ,    controlPosY, controlPosZ, duration);
+  transform.ActionBezier2LocalMoveYZ(toTransform, controlPosTransform,      duration);
+  ```    
 </details>     
    
 * <details>
@@ -1271,6 +1313,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier2LocalMove(toVector3,     controlPosVector3,                     duration);
+  transform.ActionBezier2LocalMove(toX, toY, toZ, controlPosX, controlPosY, controlPosZ, duration);
+  transform.ActionBezier2LocalMove(toTransform,   controlPosTransform,                   duration);
+  ```    
 </details>   
    
 #### Transform Bezier Cubic Move
@@ -1282,6 +1330,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3MoveXY(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3MoveXY(toX, toY,    controlPos1X, controlPos1Y, controlPos2X, controlPos2Y, duration);
+  transform.ActionBezier3MoveXY(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ```      
 </details>
    
 * <details>
@@ -1291,6 +1345,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3MoveXZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3MoveXZ(toX, toZ,    controlPos1X, controlPos1Z, controlPos2X, controlPos2Z, duration);
+  transform.ActionBezier3MoveXZ(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ```   
 </details>
    
 * <details>
@@ -1300,6 +1360,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3MoveYZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3MoveYZ(toY, toZ,    controlPos1Y, controlPos1Z, controlPos2Y, controlPos2Z, duration);
+  transform.ActionBezier3MoveYZ(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ```    
 </details>     
    
 * <details>
@@ -1309,6 +1375,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3Move(toVector3,     controlPos1Vector3,                       controlPos2Vector3,                       duration);
+  transform.ActionBezier3Move(toX, toY, toZ, controlPos1X, controlPos1Y, controlPos1Z, controlPos2X, controlPos2Y, controlPos2Z, duration);
+  transform.ActionBezier3Move(toTransform,   controlPos1Transform,                     controlPos2Transform,                     duration);
+  ```     
 </details>   
    
 #### Transform Bezier Cubic Local Move
@@ -1320,6 +1392,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3LocalMoveXY(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3LocalMoveXY(toX, toY,    controlPos1X, controlPos1Y, controlPos2X, controlPos2Y, duration);
+  transform.ActionBezier3LocalMoveXY(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ``` 
 </details>
    
 * <details>
@@ -1329,6 +1407,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3LocalMoveXZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3LocalMoveXZ(toX, toZ,    controlPos1X, controlPos1Z, controlPos2X, controlPos2Z, duration);
+  transform.ActionBezier3LocalMoveXZ(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ```     
 </details>
    
 * <details>
@@ -1338,6 +1422,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3LocalMoveYZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
+  transform.ActionBezier3LocalMoveYZ(toY, toZ,    controlPos1Y, controlPos1Z, controlPos2Y, controlPos2Z, duration);
+  transform.ActionBezier3LocalMoveYZ(toTransform, controlPos1Transform,       controlPos2Transform,       duration);
+  ```  
 </details>     
    
 * <details>
@@ -1347,6 +1437,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
+
+  ```C#
+  transform.ActionBezier3LocalMove(toVector3,     controlPos1Vector3,                       controlPos2Vector3,                       duration);
+  transform.ActionBezier3LocalMove(toX, toY, toZ, controlPos1X, controlPos1Y, controlPos1Z, controlPos2X, controlPos2Y, controlPos2Z, duration);
+  transform.ActionBezier3LocalMove(toTransform,   controlPos1Transform,                     controlPos2Transform,                     duration);
+  ```      
 </details>
    
 #### RectTransform Move
