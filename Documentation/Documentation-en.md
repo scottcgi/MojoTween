@@ -44,6 +44,12 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [RectTransform Move](#recttransform-move)
   * [RectTransform OffsetMax](#recttransform-offsetmax)
   * [RectTransform OffsetMin](#recttransform-offsetmin)
+  * [RectTransform SizeDelta](#recttransform-sizedelta)
+  * [Graphic Color](#graphic-color)
+  * [CanvasGroup Color](#canvasgroup-color)
+  * [SpriteRenderer Color](#spriterenderer-color)
+  * [AudioSource Volume](#audiosource-volume)
+  * [Material Values](#material-values)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1386,7 +1392,7 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMax(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform OffsetMax to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the rectTransform offsetMax to [v2]/[xy]/[target].
 </details>   
    
 #### RectTransform OffsetMin
@@ -1404,10 +1410,143 @@ The detailed relationships of engine objects  can be found in the [Code Architec
     <code>TweenAction ActionOffsetMin(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the rectTransform OffsetMin to [v2]/[xy]/[target].
-</details>     
-   
+  >Creates a TweenAction that changes the rectTransform offsetMin to [v2]/[xy]/[target].
+</details>
 
+#### RectTransform SizeDelta
+
+* <details>
+  <summary>
+    <code>TweenAction ActionSizeDeltaX/Y(float x/float y, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform sizeDelta x/y to [x]/[y].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionSizeDelta(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform sizeDelta to [v2]/[xy]/[target].
+</details>
+
+#### Graphic Color
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeTo(float alpha, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the Graphic color alpha to [alpha].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeIn/Out(float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the Graphic color alpha to [1.0f]/[0.0f].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionColorTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Graphic color to [color].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Graphic color rgb to [color].
+</details>
+
+#### CanvasGroup Color
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeTo(float alpha, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the CanvasGroup alpha to [alpha].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeIn/Out(float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the CanvasGroup alpha to [1.0f]/[0.0f].
+</details>
+
+#### SpriteRenderer Color
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeTo(float alpha, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the SpriteRenderer color alpha to [alpha].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeIn/Out(float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the SpriteRenderer color alpha to [1.0f]/[0.0f].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionColorTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the SpriteRenderer color to [color].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the SpriteRenderer color rgb to [color].
+</details>
+
+#### AudioSource Volume
+
+* <details>
+  <summary>
+    <code>TweenAction ActionVolumeTo(float volume, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the AudioSource volume to [volume].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionVolumeIn/Out(float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the AudioSource volume to [1.0f]/[0.0f].
+</details>
+
+#### Material Values
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFloat/Int/Vector/ColorTo(string name, float value/int value/in Vector4 v4/in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Material float/int/vector/color to [value]/[value]/[v4]/[color] by [name].
+</details>
+
+
+   
 ## TweenManager
 
 * <details>
@@ -1500,4 +1639,3 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   >If not dispose the native data, calling the Finalize of DisposeSentinel by GC, 
    will cause an editor error when app quit.
 </details>
-
