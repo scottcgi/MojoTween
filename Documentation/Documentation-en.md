@@ -41,6 +41,9 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   * [Transform Bezier Quadratic Local Move](#transform-bezier-quadratic-local-move)
   * [Transform Bezier Cubic Move](#transform-bezier-cubic-move)
   * [Transform Bezier Cubic Local Move](#transform-bezier-cubic-local-move)
+  * [RectTransform Move](#recttransform-move)
+  * [RectTransform OffsetMax](#recttransform-offsetmax)
+  * [RectTransform OffsetMin](#recttransform-offsetmin)
 * [TweenManager](#tweenmanager)
 * 
 
@@ -1340,8 +1343,69 @@ The detailed relationships of engine objects  can be found in the [Code Architec
   
   >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
-</details>      
+</details>
    
+#### RectTransform Move
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveAnchoredX/Y/Z(float x/float y/float z, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the rectTransform anchoredPosition x/y/z to [x]/[y]/[z].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveAnchoredXY(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the rectTransform anchoredPosition xy to [v2]/[xy]/[target].
+</details>    
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveAnchored(in Vector3 v3/float x, float y, float z/RectTransform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves the rectTransform anchoredPosition3D to [v3]/[xyz]/[target].
+</details>
+   
+#### RectTransform OffsetMax   
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionOffsetMaxX/Y(float x/float y, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform offsetMax x/y to [x]/[y].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionOffsetMax(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform OffsetMax to [v2]/[xy]/[target].
+</details>   
+   
+#### RectTransform OffsetMin
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionOffsetMinX/Y(float x/float y, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform offsetMin x/y to [x]/[y].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionOffsetMin(in Vector2 v2/float x, float y/RectTransform target, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the rectTransform OffsetMin to [v2]/[xy]/[target].
+</details>     
    
 
 ## TweenManager
