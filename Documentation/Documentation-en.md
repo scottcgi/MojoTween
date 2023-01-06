@@ -1288,19 +1288,19 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 pos1/float pos1Y, float pos1Z/Transform pos1, in Vector2 pos2/float pos2Y, float pos2Z/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] bezier3 with [pos1] and [pos2].     
+  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 pos1/float pos1X, float pos1Y, float pos1Z/Transform pos1, in Vector3 pos2/float pos2X, float pos2Y, float pos2Z/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier3 with [pos1] and [pos2].    
+  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>   
    
@@ -1308,37 +1308,37 @@ The detailed relationships of engine objects  can be found in the [Code Architec
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3LocalMoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 pos1/float pos1X, float pos1Y/Transform pos1, in Vector2 pos2/float pos2X, float pos2Y/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveXY(in Vector2 v2/float x, float y/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [pos1] and [pos2].   
+  >Creates a TweenAction that moves the transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 pos1/float pos1X, float pos1Z/Transform pos1, in Vector2 pos2/float pos2X, float pos2Z/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveXZ(in Vector2 v2/float x, float z/Transform target, in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position xz to [v2]/[xz]/[target] by bezier3 with [pos1] and [pos2].    
+  >Creates a TweenAction that moves the transform localPosition xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 pos1/float pos1Y, float pos1Z/Transform pos1, in Vector2 pos2/float pos2Y, float pos2Z/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveYZ(in Vector2 v2/float y, float z/Transform target, in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position yz to [v2]/[yz]/[target] bezier3 with [pos1] and [pos2].     
+  >Creates a TweenAction that moves the transform localPosition yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 </details>     
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3Move(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 pos1/float pos1X, float pos1Y, float pos1Z/Transform pos1, in Vector3 pos2/float pos2X, float pos2Y, float pos2Z/Transform pos2, float duration)</code>
+    <code>TweenAction ActionBezier3LocalMove(in Vector3 v3/float x, float y, float z/Transform target, in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1, in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the transform position to [v3]/[xyz]/[target] by bezier3 with [pos1] and [pos2].    
+  >Creates a TweenAction that moves the transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 </details>      
    
