@@ -4,11 +4,11 @@
 
 `Tween` is mainly used to build an action timeline, and then fill the timeline with actions. `TweenAction` can be created manually, but in most cases, the engine has extended a large number of existing `Unity Objects`.
 
-Such as `Transform` can directly call the method with the `Action` prefix to create an `TweenAction`, just like `ActionMoveX(float x, float duration)`.
+Such as `Transform` can directly call the method with the `Action` prefix to create a `TweenAction`, just like `transform.ActionMoveX(float x, float duration)`.
 
 Both `Tween` and `TweenAction` support chained calls to set properties, including `ease`, `isRelative`, `callback` and more.
 
-The detailed relationships of engine objects  can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
+The detailed relationships of engine objects can be found in the [Code Architecture](./CodeArchitecture.png) diagram.
 
 * [Tween](#tween)
   * [Create Tween](#create-tween) 
