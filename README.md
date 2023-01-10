@@ -1,6 +1,6 @@
 ## MojoUnity-Tween v1.0
 
-MojoUnity-Tween is an amazing Tween animation engine, extremely optimized for `C#` and `Unity`, coded with the new technologies such as `Burst`, `Jobs`, `Collections`, `Mathematics` and more.
+MojoUnity-Tween is an amazing Tween animation Engine, highly optimized for `C#` and `Unity`, coded with the new technologies such as `Burst`, `Jobs`, `Collections`, `Mathematics` and more.
 
 The engine provides a complete set of solutions for applying Tween to all aspects of `Unity Objects`, as well as visualizing the running details of Tweens through the `Editor UI`.
 
