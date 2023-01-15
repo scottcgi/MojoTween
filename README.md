@@ -67,6 +67,10 @@ The package has rich code samples and detailed usage docs.
 * Many engine public APIs are implemented based on the extension of the core code, so it is very natural and smooth to customize your own function extensions with the core code.
 * All engine extensions use `C# (static this) Extension Methods`, which makes it convenient and fast to use.
 
+#### Supported OS:
+
+In theory any platform that Unity supports.
+
 ## Code Architecture
 
 ![MojoUnity-Tween Code Architecture](./Documentation/CodeArchitecture.png "MojoUnity-Tween Code Architecture")
