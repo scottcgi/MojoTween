@@ -14,7 +14,7 @@ Open the script options by `[Edit] -> [Project Settting] -> [Player] -> [Other S
  * First, add the `ENABLE_BURST_AOT` to `[Script Compilation] -> [Script Define Symbols]`.
  * Second, enable the `Allow ‘unsafe’ Code`.
 
-Tip: **Any platform to be built needs to be set.**
+Tip: **Any platform to build requires the above options to be set.**
 
 ## Step 3. Understand the package structure
 
@@ -25,18 +25,18 @@ Tip: **Any platform to be built needs to be set.**
       * `Scenes`
         * `Transform.unity` — **Transform creates various Tweens.**
         * `UI.unity` — **UI creates various Tweens.**
-      * `Scripts`
+      * `Scripts` — **The source code of samples.**
   * `Scripts`
     * `Editor`
       * `BaseEitor` — **An extension of the UnityEditor for Editor Tools.**
-      * `Menus` — **Editor Tools under the menu "Tools/MojoUnity/Tween".**
-      * `MojoUnity.Editor.asmdef`
-    * `link.xml`
+      * `Menus` — **The Tween Editor Tools under the menu "Tools/MojoUnity/Tween".**
+      * `MojoUnity.Editor.asmdef` — **Generates the MojoUnity.Editor.dll file.**
+    * `link.xml` — **Prevent Burst code stripping from managed assemblies.**
     * `Runtime` 
-      * `AssemblyInfo.cs`
-      * `Modules`
-      * `MojoUnity.asmdef`
-      * `Utils`
+      * `AssemblyInfo.cs` — **Enables the Editor code to access the internal method of the Runtime code.**
+      * `Modules` — **The source code of Tween.**
+      * `MojoUnity.asmdef` — **Generates the MojoUnity.dll file.**
+      * `Utils` — **The extensions of Transform and Color for Tween.**
 
 ## Step 4. 
 
