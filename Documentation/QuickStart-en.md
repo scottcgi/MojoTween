@@ -16,5 +16,28 @@ Open the script options by `[Edit] -> [Project Settting] -> [Player] -> [Other S
 
 Tip: Any platform to be built needs to be set.
 
-## Step 3
+## Step 3. Overview package structure
+
+* `MojoUnity`
+  * `Samples`
+    * `MojoUnityTween`
+      * `Resources`
+      * `Scenes`
+        * `Transform.unity`
+        * `UI.unity` 
+      * `Scripts`
+    * `Other Packages of MojoUnity` 
+  * `Scripts`
+    * `Editor`
+      * `BaseEitor`
+      * `Menus`
+      * `MojoUnity.Editor.asmdef`
+    * `link.xml`
+    * `Runtime` 
+      * `AssemblyInfo.cs`
+      * `Modules`
+      * `MojoUnity.asmdef`
+      * `Utils`
+
+## Step 4. 
 
