@@ -1,4 +1,4 @@
-## Step 1. Install dependent packages
+## Step 1. Install the dependent packages
 
 Install the `Burst`, `Collections` and `Mathematics` from the Unity `Package Manager` by doing the following:
 
@@ -7,30 +7,29 @@ Install the `Burst`, `Collections` and `Mathematics` from the Unity `Package Man
   * Find `Burst`, `Collections` and `Mathematics` and install them one by one.
   * Restart the `Unity Editor`.
 
-## Step 2. Set script options
+## Step 2. Set the script options
 
 Open the script options by `[Edit] -> [Project Settting] -> [Player] -> [Other Settings]` and set two items:
 
  * First, add the `ENABLE_BURST_AOT` to `[Script Compilation] -> [Script Define Symbols]`.
  * Second, enable the `Allow ‘unsafe’ Code`.
 
-Tip: Any platform to be built needs to be set.
+Tip: **Any platform to be built needs to be set.**
 
-## Step 3. Overview package structure
+## Step 3. Understand the package structure
 
 * `MojoUnity`
   * `Samples`
     * `MojoUnityTween`
       * `Resources`
       * `Scenes`
-        * `Transform.unity`
-        * `UI.unity` 
+        * `Transform.unity` — **Transform creates various Tweens.**
+        * `UI.unity` — **UI creates various Tweens.**
       * `Scripts`
-    * `Other Packages of MojoUnity` 
   * `Scripts`
     * `Editor`
-      * `BaseEitor`
-      * `Menus`
+      * `BaseEitor` — **An extension of the UnityEditor for Editor Tools.**
+      * `Menus` — **Editor Tools under the menu "Tools/MojoUnity/Tween".**
       * `MojoUnity.Editor.asmdef`
     * `link.xml`
     * `Runtime` 
