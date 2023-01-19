@@ -38,5 +38,31 @@ Tip: **Any platform to build requires the above options to be set.**
       * `MojoUnity.asmdef` — **Generates the MojoUnity.dll file.**
       * `Utils` — **The extensions of Transform and Color for Tween.**
 
-## Step 4. 
+## Step 4. Run the samples
 
+* Open the scene of samples by `Assets/MojoUnity/Samples/MojoUnityTween/Scenes`.
+* Set the `[Game Window]` to `1080x1920 Portrait` (or higher resolution) and enable the `VSync (Game view only)`.
+* Click the `Play` button.
+
+Tip: **Open the `Tweens Info` window by the menu `Tools/MojoUnity/Tween` to view the runtime Tweens.**
+
+## Step 5. Integrate the package into the project
+
+See the usage in this file `Assets/MojoUnity/Samples/MojoUnityTween/Scripts/Loop.cs` — just need to do the following two function calls:
+
+ * First, update all Tweens step per frame.
+   ```C#
+   private void Update()
+   {
+       TweenManager.Update();
+   }  
+   ```
+   
+ * Second, dispose all Tweens native data when app quit.
+   ```C#
+   private void OnApplicationQuit()
+   {
+       TweenManager.DisposeAllNativeData();
+   }
+   ```
+Tip: **See the [Documentation](./Documentation-en.md) for detailed API usage.**
