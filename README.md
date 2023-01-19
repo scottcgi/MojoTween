@@ -8,6 +8,11 @@ The implementation code is concise, clear and easy to understand, has detailed c
 
 The package has rich code samples and detailed usage docs.
 
+ * [QuickStart](./Documentation/QuickStart-en.md)
+ * [Documentation](./Documentation/Documentation-en.md)
+ * [ChangeLog](./Documentation/ChangeLog-en.md)
+ * [Samples](./Samples)
+
 ## Features
 
 #### Ease Functions:
