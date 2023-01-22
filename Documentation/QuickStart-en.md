@@ -12,7 +12,7 @@ Install the `Burst`, `Collections` and `Mathematics` from the Unity `Package Man
 Open the script options by `[Edit] -> [Project Settting] -> [Player] -> [Other Settings]` and set two items:
 
  * First, add the `ENABLE_BURST_AOT` to `[Script Compilation] -> [Script Define Symbols]`.
- * Second, enable the `Allow ‘unsafe’ Code`.
+ * Second, enable the `Allow 'unsafe' Code`.
 
 Tip: **Any platform to build requires the above options to be set.**
 
