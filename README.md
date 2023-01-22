@@ -4,7 +4,7 @@ MojoUnity-Tween is an amazing Tween animation Engine, highly optimized for `C#` 
 
 The engine provides a complete set of solutions for applying Tween to all aspects of `Unity Objects`, as well as visualizing the running details of Tweens through the `Editor UI`.
 
-The implementation code is concise, clear and easy to understand, has detailed comments，uses `#region` for organization, and easy to customize and extend.
+The implementation code is concise, clear and easy to understand, has detailed comments, uses `#region` for organization, and easy to customize and extend.
 
 The package has rich code samples and detailed usage docs.
 
