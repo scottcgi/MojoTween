@@ -1,6 +1,6 @@
-## MojoUnity-Tween v1.0
+## MojoTween v1.0
 
-MojoUnity-Tween is an amazing Tween animation Engine, highly optimized for `C#` and `Unity`, coded with the new technologies such as `Burst`, `Jobs`, `Collections`, `Mathematics` and more.
+MojoTween is an amazing Tween animation Engine, highly optimized for `C#` and `Unity`, coded with the new technologies such as `Burst`, `Jobs`, `Collections`, `Mathematics` and more.
 
 The engine provides a complete set of solutions for applying Tween to all aspects of `Unity Objects`, as well as visualizing the running details of Tweens through the `Editor UI`.
 
@@ -78,9 +78,9 @@ In theory any platform that Unity supports.
 
 ## Code Architecture
 
-![MojoUnity-Tween Code Architecture](./Documentation/CodeArchitecture.png "MojoUnity-Tween Code Architecture")
+![MojoTween Code Architecture](./Documentation/CodeArchitecture.png "MojoTween Code Architecture")
 
 ## Issues & Discussions
 
-* Any bugs can go to [[Issues]](https://github.com/scottcgi/MojoUnity-Tween/issues) for feedback.
-* Any questions or comments can go to [[Discussions]](https://github.com/scottcgi/MojoUnity-Tween/discussions) for exchange.
+* Any bugs can go to [[Issues]](https://github.com/scottcgi/MojoTween/issues) for feedback.
+* Any questions or comments can go to [[Discussions]](https://github.com/scottcgi/MojoTween/discussions) for exchange.
