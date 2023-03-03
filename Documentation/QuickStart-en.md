@@ -18,37 +18,36 @@ Tip: **Any platform to build requires the above options to be set.**
 
 ## Step 3. Understand the package structure
 
-* `MojoUnity`
+* `MojoTween`
   * `Samples`
-    * `MojoUnityTween`
       * `Resources`
       * `Scenes`
-        * `Transform.unity` — **Transform creates various Tweens.**
-        * `UI.unity` — **UI creates various Tweens.**
+        * `MojoTweenTransform.unity` — **Transform creates various Tweens.**
+        * `MojoTweenUI.unity` — **UI creates various Tweens.**
       * `Scripts` — **The source code of samples.**
   * `Scripts`
     * `Editor`
       * `BaseEitor` — **An extension of the UnityEditor for Editor Tools.**
-      * `Menus` — **The Tween Editor Tools under the menu "Tools/MojoUnity/Tween".**
-      * `MojoUnity.Editor.asmdef` — **Generates the MojoUnity.Editor.dll file.**
+      * `Menus` — **The Tween Editor Tools under the menu "Tools/MojoTween".**
+      * `MojoTween.Editor.asmdef` — **Generates the MojoTween.Editor.dll file.**
     * `link.xml` — **Prevent Burst code stripping from managed assemblies.**
     * `Runtime` 
       * `AssemblyInfo.cs` — **Enables the Editor code to access the internal method of the Runtime code.**
       * `Modules` — **The source code of Tween.**
-      * `MojoUnity.asmdef` — **Generates the MojoUnity.dll file.**
+      * `MojoTween.asmdef` — **Generates the MojoTween.dll file.**
       * `Utils` — **The extensions of Transform and Color for Tween.**
 
 ## Step 4. Run the samples
 
-* Open the scene of samples by `Assets/MojoUnity/Samples/MojoUnityTween/Scenes`.
+* Open the scene of samples by `Assets/MojoTweeen/Samples/Scenes`.
 * Set the `[Game Window]` to `1080x1920 Portrait` (or higher resolution) and enable the `VSync (Game view only)`.
 * Click the `Play` button.
 
-Tip: **Open the `Tweens Info` window by the menu `Tools/MojoUnity/Tween` to view the runtime Tweens.**
+Tip: **Open the `Tweens Info` window by the menu `Tools/MojoTween` to view the runtime Tweens.**
 
 ## Step 5. Integrate the package into the project
 
-See the usage in this file `Assets/MojoUnity/Samples/MojoUnityTween/Scripts/Loop.cs` — just need to do the following two function calls:
+See the usage in this file `Assets/MojoTween/Samples/Scripts/Loop.cs` — just need to do the following two function calls:
 
  * First, update all Tweens step per frame.
    ```C#
