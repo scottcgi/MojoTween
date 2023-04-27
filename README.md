@@ -84,3 +84,10 @@ In theory any platform that Unity supports.
 
 * Any bugs can go to [[Issues]](https://github.com/scottcgi/MojoTween/issues) for feedback.
 * Any questions or comments can go to [[Discussions]](https://github.com/scottcgi/MojoTween/discussions) for exchange.
+
+
+## How To Get
+
+You can purchase from the official [[Unity Asset Store]](
+https://assetstore.unity.com/packages/tools/animation/mojotween-241189).
+
