@@ -6,7 +6,7 @@ _`2023-06-26 UTC+8 15:13`_
 * Added the `SetOnUpdate` callback for TweenAction.
 * Added the `SetOnUpdate` test in TweenTransform.
 * Removed and Renamed some internal code of TweenAction. 
-* Fixed the warning about the implicit operator for `NativeList<T>` in `UnityCollections-2.1.4`.
+* Fixed the warning for the implicit operator from `NativeList<T>` to `NativeArray<T>` in UnityCollections-2.1.4 and later.
 * Optimized the `UpdateActions` of Tween.
 * Improved code comments and formatting.
 
