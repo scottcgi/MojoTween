@@ -367,6 +367,19 @@ The detailed relationships of engine objects can be found in the [Code Architect
 
 * <details>
   <summary>
+    <code>Tween SetOnUpdate(Action&ltfloat&gt OnUpdate)</code>
+  </summary>
+  
+  >Sets the [OnUpdate] callback which is called when the Tween updates (Play or Rewind).    
+  >The float param is the Tween time ranging between [0.0, 1.0].
+ 
+  ```C#
+  Tween.Create().SetOnUpdate(MyUpdateAction);
+  ```
+</details>
+
+* <details>
+  <summary>
     <code>Tween SetOnComplete(Action OnComplete)</code>
   </summary>
   
@@ -815,6 +828,15 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Sets the [OnStart] callback which is called when the TweenAction starts (Play or Rewind).
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction SetOnUpdate(Action&ltfloat&gt OnUpdate)</code>
+  </summary>
+  
+  >Sets the [OnUpdate] callback which is called when the TweenAction updates (Play or Rewind).    
+  >The float param is the TweenAction time ranging between [0.0, 1.0].
 </details>
    
 * <details>
