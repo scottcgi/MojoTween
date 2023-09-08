@@ -1,3 +1,11 @@
+## v1.1.4
+
+_`2023-09-08 UTC+8 13:56`_
+
+* Fixed UI text error of AboutMojoTweenMenu.
+* Improved code comments and formatting.
+
+
 ## v1.1.3
 
 _`2023-06-26 UTC+8 15:13`_
