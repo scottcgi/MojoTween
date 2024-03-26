@@ -1,3 +1,11 @@
+## v1.1.6
+
+_`2024-03-26 UTC+8 22:56`_
+
+* Added Assembly level BurstCompile FloatMode = FloatMode.Fast to TweenActionValue and TweenEase.
+* Fixed the word spelling error in the TweenEase code comment.
+
+
 ## v1.1.4
 
 _`2023-09-08 UTC+8 13:56`_
