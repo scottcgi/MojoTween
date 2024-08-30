@@ -1,3 +1,13 @@
+## v1.2.0
+
+_`2024-08-30 UTC+8 17:41`_
+
+* Added functions of `TransformExtensions` for directly `Set` the size of `RectTransform` — with `#region Size`.
+* Added functions of `TweenActionAPIExtensions` for the size animation of `RectTransform` — with `#region Action Size`.
+* Added `TestSize()` for the size animation of `RectTransform` in `MojoTweenUI` scene.
+* Removed the unnecessary redundant function `void GetSizeDelta(in Vector2 size, out Vector2 sizeDelta)` in `TransformExtensions`.
+
+
 ## v1.1.6
 
 _`2024-03-26 UTC+8 22:56`_
