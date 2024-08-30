@@ -1,4 +1,4 @@
-## Overview v1.1.6
+## Overview v1.2.0
 
 `TweenManager` controls all running Tweens and updates all Steps every frame. `Tween` controls both queued and concurrent TweenActions. `TweenAction` controls a list of TweenActionValues that will ease concurrently. `TweenActionValue` controls the target values. 
 
@@ -45,6 +45,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   * [RectTransform OffsetMax](#recttransform-offsetmax)
   * [RectTransform OffsetMin](#recttransform-offsetmin)
   * [RectTransform SizeDelta](#recttransform-sizedelta)
+  * [RectTransform Size](#recttransform-size)
   * [Graphic Color](#graphic-color)
   * [CanvasGroup Color](#canvasgroup-color)
   * [SpriteRenderer Color](#spriterenderer-color)
@@ -1543,6 +1544,24 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that changes the RectTransform sizeDelta to [v2]/[xy]/[target].
+</details>
+
+#### RectTransform Size
+
+* <details>
+  <summary>
+    <code>TweenAction ActionSizeX/Y([float x/float y], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the RectTransform size x/y to [x]/[y].
+</details>
+   
+* <details>
+  <summary>
+    <code>TweenAction ActionSize([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the RectTransform size to [v2]/[xy]/[target].
 </details>
 
 #### Graphic Color
