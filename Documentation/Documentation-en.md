@@ -1,4 +1,4 @@
-## Overview v1.3.2
+## Overview v1.3.3
 
 `TweenManager` controls all running Tweens and updates all Steps every frame. `Tween` controls both queued and concurrent TweenActions. `TweenAction` controls a list of TweenActionValues that will ease concurrently. `TweenActionValue` controls the final values. 
 
