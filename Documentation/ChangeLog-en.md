@@ -1,3 +1,24 @@
+## v1.3.3
+
+_`2025-04-17 UTC+8 15:05`_
+
+#### Added
+
+* Added the `(Local)MoveAndRotate` TweenActionAPIs — with `#region (Local) Action Move And Rotate`.
+* Added the `CanvasRenderer` TweenActionAPIs — with `#region Action CanvasRenderer `.
+
+#### Optimized
+
+* Optimized the `TweeAction`.
+* Optimized the `TweenActionExtensions`.
+* Improved code comments and formatting.
+
+#### Removed
+
+* Removed the unnecessary redundant functions in `TweenActionExtensions`.
+* Removed the unnecessary redundant functions in `ColorExtensions`.
+
+
 ## v1.2.0
 
 _`2024-08-30 UTC+8 17:41`_
