@@ -28,7 +28,8 @@ The package has rich code samples and detailed usage docs.
 * `RectTransform` can perform Tween with `Anchored`, `OffsetMax`, `OffsetMin`, `sizeDelta`.
 * `Graphic` can perform Tween with `Fade`, `Color`, `RGB`.
 * `CanvasGroup` can perform Tween with `Fade`.
-* `SpriteRenderer` can perform Tween with `Fade`.
+* `CanvasRenderer` can perform Tween with `Fade`, `Color`, `RGB`.
+* `SpriteRenderer` can perform Tween with `Fade`, `Color`, `RGB`.
 * `AudioSource` can perform Tween with `Volume`.
 * `Material` can perform Tween with `Float`, `Int`, `Vector`, `Color`.
 
