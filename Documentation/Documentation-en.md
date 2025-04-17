@@ -1,6 +1,6 @@
-## Overview v1.2.0
+## Overview v1.3.2
 
-`TweenManager` controls all running Tweens and updates all Steps every frame. `Tween` controls both queued and concurrent TweenActions. `TweenAction` controls a list of TweenActionValues that will ease concurrently. `TweenActionValue` controls the target values. 
+`TweenManager` controls all running Tweens and updates all Steps every frame. `Tween` controls both queued and concurrent TweenActions. `TweenAction` controls a list of TweenActionValues that will ease concurrently. `TweenActionValue` controls the final values. 
 
 `Tween` is mainly used to build an action timeline, and then fill the timeline with actions. `TweenAction` can be created manually, but in most cases, the engine has extended a large number of existing `Unity Objects`.
 
@@ -34,6 +34,8 @@ The detailed relationships of engine objects can be found in the [Code Architect
   * [Transform Scale](#transform-scale)
   * [Transform Rotate](#transform-rotate)
   * [Transform Local Rotate](#transform-local-rotate)
+  * [Transform Rotate And Move](#transform-rotate-and-move)
+  * [Transform Local Rotate And Move](#transform-local-rotate-and-move)
   * [Transform Shake Position](#transform-shake-position)
   * [Transform Shake Scale](#transform-shake-scale)
   * [Transform Shake Rotation](#transform-shake-rotation)
@@ -48,6 +50,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   * [RectTransform Size](#recttransform-size)
   * [Graphic Color](#graphic-color)
   * [CanvasGroup Color](#canvasgroup-color)
+  * [CanvasRenderer Color](#canvasRenderer-color)
   * [SpriteRenderer Color](#spriterenderer-color)
   * [AudioSource Volume](#audiosource-volume)
   * [Material Values](#material-values)
@@ -933,34 +936,34 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionMoveXY([in Vector2 v2/float x, float y/Transform target], float duration)</code>
+    <code>TweenAction ActionMoveXY([in Vector2 v2/float x, float y/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[final].
 </details>
 
 * <details>
   <summary>
-    <code>TweenAction ActionMoveXZ([in Vector2 v2/float x, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionMoveXZ([in Vector2 v2/float x, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionMoveYZ([in Vector2 v2/float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionMoveYZ([in Vector2 v2/float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionMove([in Vector3 v3/float x, float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionMove([in Vector3 v3/float x, float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[final].
 </details>
    
 #### Transform Local Move
@@ -975,34 +978,34 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalMoveXY([in Vector2 v2/float x, float y/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalMoveXY([in Vector2 v2/float x, float y/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalMoveXZ([in Vector2 v2/float x, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalMoveXZ([in Vector2 v2/float x, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalMoveYZ([in Vector2 v2/float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalMoveYZ([in Vector2 v2/float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalMove([in Vector3 v3/float x, float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalMove([in Vector3 v3/float x, float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[final].
 </details>    
    
 #### Transform Scale 
@@ -1017,34 +1020,34 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionScaleXY([in Vector2 v2/float x, float y/float value/Transform target], float duration)</code>
+    <code>TweenAction ActionScaleXY([in Vector2 v2/float x, float y/float value/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the Transform localScale xy to [v2]/[xy]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale xy to [v2]/[xy]/[value]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionScaleXZ([in Vector2 v2/float x, float z/float value/Transform target], float duration)</code>
+    <code>TweenAction ActionScaleXZ([in Vector2 v2/float x, float z/float value/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the Transform localScale xz to [v2]/[xz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale xz to [v2]/[xz]/[value]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionScaleYZ([in Vector2 v2/float y, float z/float value/Transform target], float duration)</code>
+    <code>TweenAction ActionScaleYZ([in Vector2 v2/float y, float z/float value/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the Transform localScale yz to [v2]/[yz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale yz to [v2]/[yz]/[value]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionScale([in Vector3 v3/float x, float y, float z/float value/Transform target], float duration)</code>
+    <code>TweenAction ActionScale([in Vector3 v3/float x, float y, float z/float value/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that scales the Transform localScale to [v3]/[xyz]/[value]/[target].
+  >Creates a TweenAction that scales the Transform localScale to [v3]/[xyz]/[value]/[final].
 </details>
    
 #### Transform Rotate   
@@ -1059,34 +1062,34 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionRotateXY([in Vector2 v2/float x, float y/Transform target], float duration)</code>
+    <code>TweenAction ActionRotateXY([in Vector2 v2/float x, float y/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform eulerAngles xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles xy to [v2]/[xy]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionRotateXZ([in Vector2 v2/float x, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionRotateXZ([in Vector2 v2/float x, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform eulerAngles xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles xz to [v2]/[xz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionRotateYZ([in Vector2 v2/float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionRotateYZ([in Vector2 v2/float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform eulerAngles yz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles yz to [v2]/[xz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionRotate([in Vector3 v3/float x, float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionRotate([in Vector3 v3/float x, float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform eulerAngles to [v3]/[xyz]/[target].
+  >Creates a TweenAction that rotates the Transform eulerAngles to [v3]/[xyz]/[final].
 </details>
    
 #### Transform Local Rotate
@@ -1101,34 +1104,74 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalRotateXY([in Vector2 v2/float x, float y/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalRotateXY([in Vector2 v2/float x, float y/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform localEulerAngles xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles xy to [v2]/[xy]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalRotateXZ([in Vector2 v2/float x, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalRotateXZ([in Vector2 v2/float x, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform localEulerAngles xz to [v2]/[xz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles xz to [v2]/[xz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalRotateYZ([in Vector2 v2/float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalRotateYZ([in Vector2 v2/float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform localEulerAngles yz to [v2]/[yz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles yz to [v2]/[yz]/[final].
 </details>
    
 * <details>
   <summary>
-    <code>TweenAction ActionLocalRotate([in Vector3 v3/float x, float y, float z/Transform target], float duration)</code>
+    <code>TweenAction ActionLocalRotate([in Vector3 v3/float x, float y, float z/Transform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that rotates the Transform localEulerAngles to [v3]/[xyz]/[target].
+  >Creates a TweenAction that rotates the Transform localEulerAngles to [v3]/[xyz]/[final].
+</details>
+
+#### Transform Rotate And Move
+
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveXYAndRotateZ([in Vector3 v3/in Vector2 v2, float z/float x, float y, float z/Transform final], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves and rotates the transform position xy to [v3.xy]/[v2]/[xy]/[final] and eulerAngles z to [v3.z]/[z]/[z]/[final].  
+  >Optimized with transform GetPositionAndRotation and SetPositionAndRotation.
+</details>  
+
+* <details>
+  <summary>
+    <code>TweenAction ActionMoveAndRotate([in Vector3 position, in Vector3 eulerAngles/Transform final], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves and rotates the transform position to [position]/[final] and eulerAngles to [eulerAngles]/[final].  
+  >Optimized with transform GetPositionAndRotation and SetPositionAndRotation.
+</details>
+
+#### Transform Local Rotate And Move
+
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveXYAndRotateZ([in Vector3 v3/in Vector2 v2, float z/float x, float y, float z/Transform final], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves and rotates the transform localPosition xy to [v3.xy]/[v2]/[z]/[final] and localEulerAngles z to [v3.z]/[z]/[z]/[final].  
+  >Optimized with transform GetLocalPositionAndRotation and SetLocalPositionAndRotation.
+</details>  
+
+* <details>
+  <summary>
+    <code>TweenAction ActionLocalMoveAndRotate([in Vector3 localPosition, in Vector3 localEulerAngles/Transform final], float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that moves and rotates the transform localPosition to [localPosition]/[final] and eulerAngles to [localEulerAngles]/[final].  
+  >Optimized with transform GetLocalPositionAndRotation and SetLocalPositionAndRotation.
 </details>
    
 #### Transform Shake Position
@@ -1222,10 +1265,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2MoveXY([in Vector2 v2/float x, float y/Transform target], [in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2MoveXY([in Vector2 v2/float x, float y/Transform final], [in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[final] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1237,10 +1280,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2MoveXZ([in Vector2 v2/float x, float z/Transform target], [in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2MoveXZ([in Vector2 v2/float x, float z/Transform final], [in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[final] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1252,10 +1295,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2MoveYZ([in Vector2 v2/float y, float z/Transform target], [in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2MoveYZ([in Vector2 v2/float y, float z/Transform final], [in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[final] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1267,10 +1310,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2Move([in Vector3 v3/float x, float y, float z/Transform target], [in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2Move([in Vector3 v3/float x, float y, float z/Transform final], [in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[final] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1284,10 +1327,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2LocalMoveXY([in Vector2 v2/float x, float y/Transform target], [in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2LocalMoveXY([in Vector2 v2/float x, float y/Transform final], [in Vector2 controlPos/float controlPosX, float controlPosY/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier2 with [controlPos].  
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[final] by bezier2 with [controlPos].  
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1299,10 +1342,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2LocalMoveXZ([in Vector2 v2/float x, float z/Transform target], [in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2LocalMoveXZ([in Vector2 v2/float x, float z/Transform final], [in Vector2 controlPos/float controlPosX, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[final] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1314,10 +1357,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2LocalMoveYZ([in Vector2 v2/float y, float z/Transform target], [in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2LocalMoveYZ([in Vector2 v2/float y, float z/Transform final], [in Vector2 controlPos/float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] by bezier2 with [controlPos].    
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[final] by bezier2 with [controlPos].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1329,10 +1372,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier2LocalMove([in Vector3 v3/float x, float y, float z/Transform target], [in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
+    <code>TweenAction ActionBezier2LocalMove([in Vector3 v3/float x, float y, float z/Transform final], [in Vector3 controlPos/float controlPosX, float controlPosY, float controlPosZ/Transform controlPos], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier2 with [controlPos].      
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[final] by bezier2 with [controlPos].      
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1346,10 +1389,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveXY([in Vector2 v2/float x, float y/Transform target], [in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3MoveXY([in Vector2 v2/float x, float y/Transform final], [in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
+  >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[final] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1361,10 +1404,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveXZ([in Vector2 v2/float x, float z/Transform target], [in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3MoveXZ([in Vector2 v2/float x, float z/Transform final], [in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1376,10 +1419,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3MoveYZ([in Vector2 v2/float y, float z/Transform target], [in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3MoveYZ([in Vector2 v2/float y, float z/Transform final], [in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
+  >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[final] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1391,10 +1434,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3Move([in Vector3 v3/float x, float y, float z/Transform target], [in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3Move([in Vector3 v3/float x, float y, float z/Transform final], [in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1408,10 +1451,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3LocalMoveXY([in Vector2 v2/float x, float y/Transform target], [in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveXY([in Vector2 v2/float x, float y/Transform final], [in Vector2 controlPos1/float controlPos1X, float controlPos1Y/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Y/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[target] by bezier3 with [controlPos1] and [controlPos2].   
+  >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[final] by bezier3 with [controlPos1] and [controlPos2].   
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1423,10 +1466,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3LocalMoveXZ([in Vector2 v2/float x, float z/Transform target], [in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveXZ([in Vector2 v2/float x, float z/Transform final], [in Vector2 controlPos1/float controlPos1X, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2X, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1438,10 +1481,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3LocalMoveYZ([in Vector2 v2/float y, float z/Transform target], [in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3LocalMoveYZ([in Vector2 v2/float y, float z/Transform final], [in Vector2 controlPos1/float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector2 controlPos2/float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[target] bezier3 with [controlPos1] and [controlPos2].     
+  >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[final] bezier3 with [controlPos1] and [controlPos2].     
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1453,10 +1496,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionBezier3LocalMove([in Vector3 v3/float x, float y, float z/Transform target], [in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
+    <code>TweenAction ActionBezier3LocalMove([in Vector3 v3/float x, float y, float z/Transform final], [in Vector3 controlPos1/float controlPos1X, float controlPos1Y, float controlPos1Z/Transform controlPos1], [in Vector3 controlPos2/float controlPos2X, float controlPos2Y, float controlPos2Z/Transform controlPos2], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[target] by bezier3 with [controlPos1] and [controlPos2].    
+  >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
   >Note: don't change the TweenEase of this TweenAction.
 
   ```C#
@@ -1478,18 +1521,18 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionMoveAnchoredXY([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+    <code>TweenAction ActionMoveAnchoredXY([in Vector2 v2/float x, float y/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the RectTransform anchoredPosition xy to [v2]/[xy]/[target].
+  >Creates a TweenAction that moves the RectTransform anchoredPosition xy to [v2]/[xy]/[final].
 </details>    
    
 * <details>
   <summary>
-    <code>TweenAction ActionMoveAnchored([in Vector3 v3/float x, float y, float z/RectTransform target], float duration)</code>
+    <code>TweenAction ActionMoveAnchored([in Vector3 v3/float x, float y, float z/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that moves the RectTransform anchoredPosition3D to [v3]/[xyz]/[target].
+  >Creates a TweenAction that moves the RectTransform anchoredPosition3D to [v3]/[xyz]/[final].
 </details>
    
 #### RectTransform OffsetMax   
@@ -1504,10 +1547,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionOffsetMax([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+    <code>TweenAction ActionOffsetMax([in Vector2 v2/float x, float y/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the RectTransform offsetMax to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform offsetMax to [v2]/[xy]/[final].
 </details>   
    
 #### RectTransform OffsetMin
@@ -1522,10 +1565,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionOffsetMin([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+    <code>TweenAction ActionOffsetMin([in Vector2 v2/float x, float y/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the RectTransform offsetMin to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform offsetMin to [v2]/[xy]/[final].
 </details>
 
 #### RectTransform SizeDelta
@@ -1540,10 +1583,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionSizeDelta([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+    <code>TweenAction ActionSizeDelta([in Vector2 v2/float x, float y/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the RectTransform sizeDelta to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform sizeDelta to [v2]/[xy]/[final].
 </details>
 
 #### RectTransform Size
@@ -1558,10 +1601,10 @@ The detailed relationships of engine objects can be found in the [Code Architect
    
 * <details>
   <summary>
-    <code>TweenAction ActionSize([in Vector2 v2/float x, float y/RectTransform target], float duration)</code>
+    <code>TweenAction ActionSize([in Vector2 v2/float x, float y/RectTransform final], float duration)</code>
   </summary>
   
-  >Creates a TweenAction that changes the RectTransform size to [v2]/[xy]/[target].
+  >Creates a TweenAction that changes the RectTransform size to [v2]/[xy]/[final].
 </details>
 
 #### Graphic Color
@@ -1598,6 +1641,14 @@ The detailed relationships of engine objects can be found in the [Code Architect
   >Creates a TweenAction that changes the Graphic color rgb to [color].
 </details>
 
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Vector3 rgb float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the Graphic color rgb to [rgb].
+</details>
+
 #### CanvasGroup Color
 
 * <details>
@@ -1605,7 +1656,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
     <code>TweenAction ActionFadeTo(float alpha, float duration)</code>
   </summary>
   
-  >Creates a TweenAction that fades the CanvasGroup alpha to [alpha].
+  >Creates a TweenAction that fades the CanvasGroup color alpha to [alpha].
 </details>
 
 * <details>
@@ -1613,7 +1664,49 @@ The detailed relationships of engine objects can be found in the [Code Architect
     <code>TweenAction ActionFadeIn/Out(float duration)</code>
   </summary>
   
-  >Creates a TweenAction that fades the CanvasGroup alpha to [1.0f]/[0.0f].
+  >Creates a TweenAction that fades the CanvasGroup color alpha to [1.0f]/[0.0f].
+</details>
+
+#### CanvasRenderer Color
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeTo(float alpha, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the CanvasRenderer color alpha to [alpha].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionFadeIn/Out(float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that fades the CanvasRenderer color alpha to [1.0f]/[0.0f].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionColorTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the CanvasRenderer color to [color].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Color color, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the CanvasRenderer color rgb to [color].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Vector3 rgb, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the CanvasRenderer color rgb to [rgb].
 </details>
 
 #### SpriteRenderer Color
@@ -1648,6 +1741,14 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that changes the SpriteRenderer color rgb to [color].
+</details>
+
+* <details>
+  <summary>
+    <code>TweenAction ActionRGBTo(in Vector3 rgb, float duration)</code>
+  </summary>
+  
+  >Creates a TweenAction that changes the SpriteRenderer color rgb to [rgb].
 </details>
 
 #### AudioSource Volume
