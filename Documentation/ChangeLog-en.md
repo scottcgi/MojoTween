@@ -1,3 +1,13 @@
+## v1.3.5
+
+_`2025-04-19 UTC+8 23:02`_
+
+#### Fixed
+
+* Fixed consecutively `Append TweenAction` for the same object's state with `isRelative` set to True, then the next `TweenAction initialization` will occur before previous `TweenAction completion`. 
+* Fixed the `Tools/MojoTween/Tweens Info` display error with zero duration `TweenAction`.
+  
+
 ## v1.3.3
 
 _`2025-04-17 UTC+8 15:05`_
