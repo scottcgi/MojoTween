@@ -1182,7 +1182,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform position x/y/z by [amplitude] and [speed].  
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 * <details>
@@ -1191,7 +1191,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform position xy/xz/yz by [amplitude] and [speed].  
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 * <details>
@@ -1200,7 +1200,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform position by [amplitude] and [speed].  
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 #### Transform Shake Scale
@@ -1211,7 +1211,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform scale x/y/z by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 * <details>
@@ -1220,7 +1220,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform scale xy/xz/yz by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 * <details>
@@ -1229,7 +1229,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform scale by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 #### Transform Shake Rotation
@@ -1240,7 +1240,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform rotation x/y/z by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details> 
    
 * <details>
@@ -1249,7 +1249,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform rotation xy/xz/yz by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 * <details>
@@ -1258,7 +1258,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that shakes the Transform rotation by [amplitude] and [speed].   
-  >Note: don't change the isRelative and TweenEase of this TweenAction.
+  >Note: Don't change the isRelative and TweenEase of this TweenAction.
 </details>
    
 #### Transform Bezier Quadratic Move
@@ -1269,7 +1269,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[final] by bezier2 with [controlPos].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2MoveXY(toVector2,   controlPosVector2,        duration);
@@ -1284,7 +1284,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[final] by bezier2 with [controlPos].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2MoveXZ(toVector2,   controlPosVector2,        duration);
@@ -1299,7 +1299,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[final] by bezier2 with [controlPos].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2MoveYZ(toVector2,   controlPosVector2,        duration);
@@ -1314,7 +1314,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[final] by bezier2 with [controlPos].      
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2Move(toVector3,     controlPosVector3,                     duration);
@@ -1331,7 +1331,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[final] by bezier2 with [controlPos].  
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2LocalMoveXY(toVector2,   controlPosVector2,        duration);
@@ -1346,7 +1346,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[final] by bezier2 with [controlPos].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2LocalMoveXZ(toVector2,   controlPosVector2,        duration);
@@ -1361,7 +1361,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[final] by bezier2 with [controlPos].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2LocalMoveYZ(toVector2,   controlPosVector2,        duration);
@@ -1376,7 +1376,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[final] by bezier2 with [controlPos].      
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier2LocalMove(toVector3,     controlPosVector3,                     duration);
@@ -1393,7 +1393,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position xy to [v2]/[xy]/[final] by bezier3 with [controlPos1] and [controlPos2].   
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3MoveXY(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1408,7 +1408,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position xz to [v2]/[xz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3MoveXZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1423,7 +1423,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position yz to [v2]/[yz]/[final] bezier3 with [controlPos1] and [controlPos2].     
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3MoveYZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1438,7 +1438,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform position to [v3]/[xyz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3Move(toVector3,     controlPos1Vector3,                       controlPos2Vector3,                       duration);
@@ -1455,7 +1455,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition xy to [v2]/[xy]/[final] by bezier3 with [controlPos1] and [controlPos2].   
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3LocalMoveXY(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1470,7 +1470,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition xz to [v2]/[xz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3LocalMoveXZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1485,7 +1485,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition yz to [v2]/[yz]/[final] bezier3 with [controlPos1] and [controlPos2].     
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3LocalMoveYZ(toVector2,   controlPos1Vector2,         controlPos2Vector2,         duration);
@@ -1500,7 +1500,7 @@ The detailed relationships of engine objects can be found in the [Code Architect
   </summary>
   
   >Creates a TweenAction that moves the Transform localPosition to [v3]/[xyz]/[final] by bezier3 with [controlPos1] and [controlPos2].    
-  >Note: don't change the TweenEase of this TweenAction.
+  >Note: Don't change the TweenEase of this TweenAction.
 
   ```C#
   transform.ActionBezier3LocalMove(toVector3,     controlPos1Vector3,                       controlPos2Vector3,                       duration);
