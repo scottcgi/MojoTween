@@ -1,4 +1,4 @@
-## MojoTween v1.3.5
+## MojoTween v1.3.6
 
 MojoTween is an amazing Tween animation Engine, highly optimized for `C#` and `Unity`, coded with the new technologies such as `Burst`, `Jobs`, `Collections`, `Mathematics` and more.
 
