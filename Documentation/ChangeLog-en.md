@@ -1,3 +1,16 @@
+## v1.3.6
+
+_`2025-05-22 UTC+8 16:16`_
+
+#### Fixed
+
+* Fixed `#region Action Size` functions cannot play correctly with `isRelative` set to True.
+
+#### Optimized
+
+* Improved code comments and formatting.
+  
+
 ## v1.3.5
 
 _`2025-04-19 UTC+8 23:02`_
