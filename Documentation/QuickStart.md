@@ -64,4 +64,4 @@ See the usage in this file `Assets/MojoTween/Samples/Scripts/Loop.cs` — just n
        TweenManager.DisposeAllNativeData();
    }
    ```
-Tip: **See the [Documentation](./Documentation-en.md) for detailed API usage.**
+Tip: **See the [Documentation](./Documentation.md) for detailed API usage.**
