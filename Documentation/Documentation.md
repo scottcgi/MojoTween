@@ -2,17 +2,17 @@
 
 `TweenManager` – Controls **state switching** and **step updating** for all `Tween` instances.
 
-`Tween` – Controls the **state** and **updates** of all its `TweenAction`s. It supports both **sequential** and **concurrent** execution modes. For example: Methods with the `Append` prefix add **queue actions**, while those with the `Add` prefix add **concurrent actions**.
+`Tween` – Controls the **state** and **updates** of all its `TweenActions`. It supports both **sequential** and **concurrent** execution modes. For example: Methods with the `Append` prefix add **queue actions**, while those with the `Add` prefix add **concurrent actions**.
 
-`Tween` constructs a sequence timeline and fills it with various types of `TweenAction`s to achieve the orderly execution of **queue actions** and **concurrent actions**.
+`Tween` constructs a sequence timeline and fills it with various types of `TweenActions` to achieve the orderly execution of **queue actions** and **concurrent actions**.
 
 `TweenExtensions` – Extends the functionality of `Tween`, demonstrating how to use existing interfaces to customize `Tween`'s implementation.
 
-`TweenAction` – Controls a group of `TweenActionValue`s. These **action values** execute concurrently to drive the progressive realization of a complete action.
+`TweenAction` – Controls a group of `TweenActionValues`. These **action values** execute concurrently to drive the progressive realization of a complete action.
 
 `TweenActionExtensions` – Extends the functionality of `TweenAction`. Since `TweenAction` needs to be bound to a `Tween` to execute, this extension provides a default binding to a `Tween`, allowing `TweenAction` to be executed directly.
 
-`TweenActionAPIExtensions` – Extends the functionality of `Unity Objects`, enabling them to directly create and use `TweenAction`s.
+`TweenActionAPIExtensions` – Extends the functionality of `Unity Objects`, enabling them to directly create and use `TweenActions`.
 
 `TweenAction` can be created manually, but `TweenActionAPIExtensions` provides extensive property extensions for many `Unity Objects`, so typically manual creation is not required.
 
@@ -451,8 +451,8 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>Tween SetDefaultEase(TweenEase ease)</code>
   </summary>
 
-  > Sets the default `[ease]` for `TweenAction`s when they are added. Default is `Smooth`.
-  > Only `TweenAction`s that have not already set their `[ease]` (i.e., not `Smooth`) will use the `Tween`'s default.
+  > Sets the default `[ease]` for `TweenActions` when they are added. Default is `Smooth`.
+  > Only `TweenActions` that have not already set their `[ease]` (i.e., not `Smooth`) will use the `Tween`'s default.
 
   ```C#
   Tween.Create().SetDefaultEase(TweenEase.ExponentialOut);
@@ -464,8 +464,8 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>Tween SetDefaultRelative(bool isRelative)</code>
   </summary>
 
-  > Sets the default `[isRelative]` for `TweenAction`s when they are added. Default is `false`.
-  > Only `TweenAction`s that have not already set their `[isRelative]` (i.e., not `false`) will use the `Tween`'s default.
+  > Sets the default `[isRelative]` for `TweenActions` when they are added. Default is `false`.
+  > Only `TweenActions` that have not already set their `[isRelative]` (i.e., not `false`) will use the `Tween`'s default.
 
   ```C#
   Tween.Create().SetDefaultRelative(true);
@@ -886,7 +886,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>TweenAction SetRelative(bool isRelative)</code>
   </summary>
 
-  > Sets the `[isRelative]` for all `TweenActionValue`s. Default is `false`.
+  > Sets the `[isRelative]` for all `TweenActionValues`. Default is `false`.
 </details>
 
 * <details>
@@ -896,7 +896,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
 
   > Sets the `[isRelative]` for the `TweenActionValue` at position `[index]`. Default is `false`.
   >
-  > The prefix methods `Vector2/Vector3/Vector4` for creating `TweenAction` correspond to containing `2/3/4` `TweenActionValue`s. This allows you to set properties for a specific `TweenActionValue`.
+  > The prefix methods `Vector2/Vector3/Vector4` for creating `TweenAction` correspond to containing `2/3/4` `TweenActionValues`. This allows you to set properties for a specific `TweenActionValue`.
 </details>
 
 * <details>
@@ -904,7 +904,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>TweenAction SetEase(TweenEase ease)</code>
   </summary>
 
-  > Sets the `[ease]` for all `TweenActionValue`s. Default is `Smooth`.
+  > Sets the `[ease]` for all `TweenActionValues`. Default is `Smooth`.
 </details>
 
 * <details>
@@ -914,7 +914,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
 
   > Sets the `[ease]` for the `TweenActionValue` at position `[index]`. Default is `Smooth`.
   >
-  > The prefix methods `Vector2/Vector3/Vector4` for creating `TweenAction` correspond to containing `2/3/4` `TweenActionValue`s. This allows you to set properties for a specific `TweenActionValue`.
+  > The prefix methods `Vector2/Vector3/Vector4` for creating `TweenAction` correspond to containing `2/3/4` `TweenActionValues`. This allows you to set properties for a specific `TweenActionValue`.
 </details>
 
 * <details>
@@ -2095,7 +2095,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void PlayAll()</code>
   </summary>
 
-  > Plays all updating `Tween`s, except those that have stopped or completed and are about to be automatically recycled.
+  > Plays all updating `Tweens`, except those that have stopped or completed and are about to be automatically recycled.
   > Note: If a `Tween` is currently or was previously rewinding, it will be reversed.
 </details>
 
@@ -2104,7 +2104,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void RewindAll()</code>
   </summary>
 
-  > Rewinds all updating `Tween`s, except those that have stopped or completed and are about to be automatically recycled.
+  > Rewinds all updating `Tweens`, except those that have stopped or completed and are about to be automatically recycled.
 </details>
 
 * <details>
@@ -2112,7 +2112,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void RestartAll()</code>
   </summary>
 
-  > Restarts all updating `Tween`s, except those that have stopped or completed and are about to be automatically recycled.
+  > Restarts all updating `Tweens`, except those that have stopped or completed and are about to be automatically recycled.
 </details>
 
 * <details>
@@ -2120,7 +2120,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void ReverseAll()</code>
   </summary>
 
-  > Reverses all updating `Tween`s, except those that have stopped or completed and are about to be automatically recycled.
+  > Reverses all updating `Tweens`, except those that have stopped or completed and are about to be automatically recycled.
 </details>
 
 * <details>
@@ -2128,7 +2128,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void PauseAll(bool isPause)</code>
   </summary>
 
-  > Pauses or resumes all updating `Tween`s.
+  > Pauses or resumes all updating `Tweens`.
 </details>
 
 * <details>
@@ -2136,7 +2136,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void TogglePauseAll()</code>
   </summary>
 
-  > Toggles pause/resume for all updating `Tween`s.
+  > Toggles pause/resume for all updating `Tweens`.
 </details>
 
 * <details>
@@ -2144,7 +2144,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void StopAll()</code>
   </summary>
 
-  > Stops all updating `Tween`s, except those in `Setup`, `Stopping`, `Stopped`, `Completing`, or `Completed` states.
+  > Stops all updating `Tweens`, except those in `Setup`, `Stopping`, `Stopped`, `Completing`, or `Completed` states.
   > Note: If a `Tween` is recyclable, it will be recycled after stopping.
 </details>
 
@@ -2153,7 +2153,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void SetRecyclableAll(bool isRecyclable)</code>
   </summary>
 
-  > Sets whether all updating `Tween`s are recyclable.
+  > Sets whether all updating `Tweens` are recyclable.
 </details>
 
 * <details>
@@ -2161,7 +2161,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void RecycleAll()</code>
   </summary>
 
-  > Stops all updating `Tween`s and recycles all unrecycled `Tween`s.
+  > Stops all updating `Tweens` and recycles all unrecycled `Tweens`.
 </details>
 
 * <details>
@@ -2169,7 +2169,7 @@ Below are the **methods** and **functions** of the core classes. Expanding each 
     <code>static void Update()</code>
   </summary>
 
-  > Updates all updating `Tween`s. Must be called every frame.
+  > Updates all updating `Tweens`. Must be called every frame.
 </details>
 
 * <details>
