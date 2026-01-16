@@ -33,7 +33,7 @@ _`2026-01-13 UTC+8 22:10`_
 * Optimized `TweenManager`'s `PauseAll` and `TogglePauseAll` methods by excluding cases where pausing or resuming was not possible.
 * Improved code comment quality and formatting alignment.
 
-#### Breaking Changed
+#### Breaking Changes
 
 * Changed method names in `Tween` for clearer meaning.
   * `IsStoppedByPlay` changed to `IsStoppedDuringPlay`.
